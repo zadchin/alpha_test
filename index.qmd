@@ -10,6 +10,6 @@ format:
 
 ## Different Pages
 
-[EDA](general-eda.qmd)
+- [EDA](general_eda.qmd)
 
 

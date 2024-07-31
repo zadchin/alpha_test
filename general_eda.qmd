@@ -11,10 +11,9 @@ format:
 
 # Spotify Dataset
 
-#
-:::{.r-stack}
-Spotify is a Swedish audio streaming and media service provider that has over 626 million monthly active users.
-:::
+With over 100 million songs and 626 million active users, 
+
+
 
 
 

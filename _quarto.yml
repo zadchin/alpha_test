@@ -1,6 +1,9 @@
 project:
   type: website
   output-dir: docs
-  
+  render:
+    - index.qmd
+    - general_eda.qmd
+
 execute:
   freeze: auto
