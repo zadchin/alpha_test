@@ -578,20 +578,111 @@
     "href": "general_eda.html#column-explanation",
     "title": "Section 1",
     "section": "Column Explanation",
-    "text": "Column Explanation\n\n\ntrack_name: Name of the song\n\n\nartist(s)_name: Name of the artist(s) of the song\n\n\nartist_count: Number of artists contributing to the song\n\n\nreleased_year: Year when the song was released\n\n\nreleased_month: Month when the song was released\n\n\nreleased_day: Day of the month when the song was released\n\n\nstreams: Total number of streams on Spotify"
+    "text": "Column Explanation\n\ntrack_name: Name of the song\n\n\nartist(s)_name: Name of the artist(s) of the song\n\n\nartist_count: Number of artists contributing to the song\n\n\nreleased_year: Year when the song was released\n\n\nreleased_month: Month when the song was released\n\n\nreleased_day: Day of the month when the song was released\n\n\nstreams: Total number of streams on Spotify\n\n\nbpm: Beats per minute, a measure of song tempo\n\n\nmode: Mode of the song (major or minor)"
   },
   {
     "objectID": "general_eda.html#column-explanation-cont.",
     "href": "general_eda.html#column-explanation-cont.",
     "title": "Section 1",
     "section": "Column Explanation (cont.)",
-    "text": "Column Explanation (cont.)\n\n\nbpm: Beats per minute, a measure of song tempo\n\n\nmode: Mode of the song (major or minor)\n\n\ndanceability_%: Percentage indicating how suitable the song is for dancing\n\n\nvalence_%: Positivity of the song’s musical content\n\n\nenergy_%: Perceived energy level of the song\n\n\nacousticness_%: Amount of acoustic sound in the song\n\n\ninstrumentalness_%: Amount of instrumental content in the song\n\n\nliveness_%: Presence of live performance elements\n\n\nspeechiness_%: Amount of spoken words in the song"
+    "text": "Column Explanation (cont.)\n\ndanceability_%: Percentage indicating how suitable the song is for dancing\n\n\nvalence_%: Positivity of the song’s musical content\n\n\nenergy_%: Perceived energy level of the song\n\n\nacousticness_%: Amount of acoustic sound in the song\n\n\ninstrumentalness_%: Amount of instrumental content in the song\n\n\nliveness_%: Presence of live performance elements\n\n\nspeechiness_%: Amount of spoken words in the song"
   },
   {
     "objectID": "general_eda.html#comment-test",
     "href": "general_eda.html#comment-test",
     "title": "Section 1",
     "section": "Comment test",
-    "text": "Comment test\n{{&lt; utterances-comments  &gt;}}"
+    "text": "Comment test\n\n{{&lt; utterances-comments  &gt;}}"
+  },
+  {
+    "objectID": "general_eda.html#comment-one",
+    "href": "general_eda.html#comment-one",
+    "title": "Section 1",
+    "section": "Comment one",
+    "text": "Comment one\nfix comment for utteranc\nGiven this dataset, what are some questions that Spotify might ask to understand its users / improve its platform?\n\n\n\n\n\n\n\n{{&lt; utterances-comments  &gt;}}"
+  },
+  {
+    "objectID": "general_eda.html#questions-that-spotify-might-be-interested-in",
+    "href": "general_eda.html#questions-that-spotify-might-be-interested-in",
+    "title": "Section 1",
+    "section": "Questions that Spotify might be interested in",
+    "text": "Questions that Spotify might be interested in\n\n\nWhat are the top 5 songs in 2023?\nWhat are the characteristics of the top 5 songs?\nWhat are the months and days that most songs are produced?\nWhat are the distributions of the audio features?\nWhat are the relationship between audio features?\nWhat are the different characteristics between the most and least-stream songs?"
+  },
+  {
+    "objectID": "general_eda.html#it-is-hard-to-answer-those-questions-by-just-looking-at-it",
+    "href": "general_eda.html#it-is-hard-to-answer-those-questions-by-just-looking-at-it",
+    "title": "Section 1",
+    "section": "IT IS HARD TO ANSWER THOSE QUESTIONS BY JUST LOOKING AT IT",
+    "text": "IT IS HARD TO ANSWER THOSE QUESTIONS BY JUST LOOKING AT IT\n\nTherefore, we visualize the data to extract useful insights."
+  },
+  {
+    "objectID": "general_eda.html#ai-data",
+    "href": "general_eda.html#ai-data",
+    "title": "Section 1",
+    "section": "AI & Data",
+    "text": "AI & Data\n\n\nfix the command\n\n\n\n\n\nflowchart LR\n  Data (Round edge) --&gt; AI (Round edge)\n\n\n\n\n\n\n\n\nFurthermore, AI relies on data. Understanding the data before feeding an algorithm is important."
+  },
+  {
+    "objectID": "general_eda.html#exploratory-data-analysis",
+    "href": "general_eda.html#exploratory-data-analysis",
+    "title": "Section 1",
+    "section": "Exploratory Data Analysis",
+    "text": "Exploratory Data Analysis\n\nExploratory Data Analysis (EDA) is the process of analyzing data sets to summarize their main characteristics, often using visual methods.\n\n\nIt’s a critical step in the data analysis workflow, providing insights into the structure, patterns, and relationships within the data."
+  },
+  {
+    "objectID": "general_eda.html#exploratory-data-analysis-1",
+    "href": "general_eda.html#exploratory-data-analysis-1",
+    "title": "Section 1",
+    "section": "Exploratory Data Analysis",
+    "text": "Exploratory Data Analysis\n\n\nEDA helps you to understand the nuances in your data\nEDA helps ensure the quality and reliability of your data\nEDA is the foundation for complex analyses as it helps with features selection, hypothesis generation, and determining the research direction."
+  },
+  {
+    "objectID": "general_eda.html#agenda",
+    "href": "general_eda.html#agenda",
+    "title": "Section 1",
+    "section": "Agenda",
+    "text": "Agenda\n\n\nTable Analysis\nDiscrete Data Analysis\nContinuous Data Analysis\nTrend Analysis\nRelationship Analysis"
+  },
+  {
+    "objectID": "general_eda.html#what-are-the-top-5-songs-based-on-stream-in-2023",
+    "href": "general_eda.html#what-are-the-top-5-songs-based-on-stream-in-2023",
+    "title": "Section 1",
+    "section": "What are the top 5 songs based on stream in 2023?",
+    "text": "What are the top 5 songs based on stream in 2023?"
+  },
+  {
+    "objectID": "general_eda.html#what-are-the-top-5-songs-based-on-danceability-in-2023",
+    "href": "general_eda.html#what-are-the-top-5-songs-based-on-danceability-in-2023",
+    "title": "Section 1",
+    "section": "What are the top 5 songs based on danceability in 2023?",
+    "text": "What are the top 5 songs based on danceability in 2023?"
+  },
+  {
+    "objectID": "general_eda.html#what-are-the-bottom-5-songs-based-on-energy-in-2023",
+    "href": "general_eda.html#what-are-the-bottom-5-songs-based-on-energy-in-2023",
+    "title": "Section 1",
+    "section": "What are the bottom 5 songs based on energy in 2023?",
+    "text": "What are the bottom 5 songs based on energy in 2023?"
+  },
+  {
+    "objectID": "general_eda.html#discrete-feature",
+    "href": "general_eda.html#discrete-feature",
+    "title": "Section 1",
+    "section": "Discrete Feature",
+    "text": "Discrete Feature\n\nFeatures that can only take in a specific set of values, often counted in whole number. For example,\n\n\n\nCoin flips: 0 or 1\nDays of the Week: Monday, Tuesday, Wednesday etc\nClass Grades: Students can receive specific grades like A, B, C, D, or F."
+  },
+  {
+    "objectID": "general_eda.html#bar-plot",
+    "href": "general_eda.html#bar-plot",
+    "title": "Section 1",
+    "section": "Bar Plot",
+    "text": "Bar Plot\n\nA bar plot is a chart that uses bars to represent the frequency or count of different categories of a discrete variable.\n\n\nBar plots are ideal for discrete variables because they clearly show the count or frequency of each category, making it easy to compare them."
+  },
+  {
+    "objectID": "general_eda.html#visualize",
+    "href": "general_eda.html#visualize",
+    "title": "Section 1",
+    "section": "Visualize",
+    "text": "Visualize\n\n\n\n\n\n\nSelect a categorical column to visualize:\n\ndata = FileAttachment(\"spotify2023.csv\").csv({ typed: true })\ncat_columns = ['released_month', 'released_day','mode']\nviewof selected_column_cat = Inputs.radio(cat_columns, {value: cat_columns[0]})\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ngrouped_data = d3.groups(data, d =&gt; d[selected_column_cat]).map(([key, values]) =&gt; ({key, count: values.length}));\n\nPlot.plot({\n  marks: [\n    Plot.barY(grouped_data, {x: \"key\", y: \"count\", fill: \"steelblue\"}),\n    Plot.text(grouped_data, {x: \"key\", y: \"count\", text: d =&gt; d.count, dy: -10})\n  ],\n  x: {\n    label: selected_column_cat\n  },\n  y: {\n    label: \"Count\"\n  },\n  color: {\n    legend: false\n  }\n})"
   }
 ]
