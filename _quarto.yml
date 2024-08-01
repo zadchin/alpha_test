@@ -7,3 +7,12 @@ project:
 
 execute:
   freeze: auto
+
+format:
+  revealjs:
+    multiplex: true
+    preview-links: auto
+    logo: images/quarto.png
+    css: styles.css
+    includes:
+      in-header: _utterances.html

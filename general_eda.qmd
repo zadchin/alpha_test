@@ -9,26 +9,120 @@ format:
 ---
 
 
-# Spotify Dataset
+## About Spotify
 
-With over 100 million songs and 626 million active users, 
+::: incremental
+
+- 626 million active users globally.
+- Over 100 million songs in the Spotify library.
+- Detailed metadata for each song, including artist, album, release date, Beats per minute, danceability, valence, energy, liveness etc
+- In our current project, we will explore the 2023 Spotify Dataset.
+- This dataset contains 953 rows and 16 columns.
+:::
 
 
 
 
+## Dataset
 
 
-## Hello, There
+```{r}
+library(readr)
+library(DT)
+data_r <- read_csv("spotify2023.csv",show_col_types = FALSE)
+datatable(data_r, options = list(scrollX = TRUE, scrollY = "150px"))
+```
 
-This presentation will show you examples of what you can do with Quarto and [Reveal.js](https://revealjs.com), including:
+::: {.fragment .fade-in}
 
--   Presenting code and LaTeX equations
--   Including computations in slide output
--   Image, video, and iframe backgrounds
--   Fancy transitions and animations
--   Printing to PDF
+Let's understand the column one-by-one.
 
-...and much more
+:::
+
+## Column Explanation
+
+. . .
+
+::: {.fragment .fade-in-then-semi-out}
+
+track_name: Name of the song
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+
+artist(s)_name: Name of the artist(s) of the song
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+
+artist_count: Number of artists contributing to the song
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+
+released_year: Year when the song was released
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+
+released_month: Month when the song was released
+
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+
+released_day: Day of the month when the song was released
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+streams: Total number of streams on Spotify
+:::
+
+## Column Explanation (cont.)
+
+. . .
+
+::: {.fragment .fade-in-then-semi-out}
+bpm: Beats per minute, a measure of song tempo
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+
+mode: Mode of the song (major or minor)
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+danceability_%: Percentage indicating how suitable the song is for dancing
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+valence_%: Positivity of the song's musical content
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+energy_%: Perceived energy level of the song
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+acousticness_%: Amount of acoustic sound in the song
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+instrumentalness_%: Amount of instrumental content in the song
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+liveness_%: Presence of live performance elements
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+speechiness_%: Amount of spoken words in the song
+:::
+
+
+## Comment test
+
+{{< utterances-comments >}}
 
 ## Pretty Code {auto-animate="true"}
 

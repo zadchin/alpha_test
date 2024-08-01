@@ -551,5 +551,47 @@
     "title": "Section 1",
     "section": "And More…",
     "text": "And More…\n\nTouch optimized (presentations look great on mobile, swipe to navigate slides)\nFooter & Logo (optionally specify custom footer per-slide)\nAuto-Slide (step through slides automatically, without any user input)\nMultiplex (allows your audience to follow the slides of the presentation you are controlling on their own phone, tablet or laptop).\n\n\nLearn more: Quarto Presentations"
+  },
+  {
+    "objectID": "general_eda.html#about-spotify",
+    "href": "general_eda.html#about-spotify",
+    "title": "Section 1",
+    "section": "About Spotify",
+    "text": "About Spotify\n\n\n626 million active users globally.\nOver 100 million songs in the Spotify library.\nDetailed metadata for each song, including artist, album, release date, Beats per minute, danceability, valence, energy, liveness etc\nIn our current project, we will explore the 2023 Spotify Dataset.\nThis dataset contains 953 rows and 16 columns."
+  },
+  {
+    "objectID": "general_eda.html#take-a-look-at-the-dataset",
+    "href": "general_eda.html#take-a-look-at-the-dataset",
+    "title": "Section 1",
+    "section": "Take a look at the dataset",
+    "text": "Take a look at the dataset\n\n\n\n\n\n\nLet’s explore each column one by one.{.larger}"
+  },
+  {
+    "objectID": "general_eda.html#dataset",
+    "href": "general_eda.html#dataset",
+    "title": "Section 1",
+    "section": "Dataset",
+    "text": "Dataset\n\n\n\n\n\n\n\nLet’s understand the column one-by-one."
+  },
+  {
+    "objectID": "general_eda.html#column-explanation",
+    "href": "general_eda.html#column-explanation",
+    "title": "Section 1",
+    "section": "Column Explanation",
+    "text": "Column Explanation\n\n\ntrack_name: Name of the song\n\n\nartist(s)_name: Name of the artist(s) of the song\n\n\nartist_count: Number of artists contributing to the song\n\n\nreleased_year: Year when the song was released\n\n\nreleased_month: Month when the song was released\n\n\nreleased_day: Day of the month when the song was released\n\n\nstreams: Total number of streams on Spotify"
+  },
+  {
+    "objectID": "general_eda.html#column-explanation-cont.",
+    "href": "general_eda.html#column-explanation-cont.",
+    "title": "Section 1",
+    "section": "Column Explanation (cont.)",
+    "text": "Column Explanation (cont.)\n\n\nbpm: Beats per minute, a measure of song tempo\n\n\nmode: Mode of the song (major or minor)\n\n\ndanceability_%: Percentage indicating how suitable the song is for dancing\n\n\nvalence_%: Positivity of the song’s musical content\n\n\nenergy_%: Perceived energy level of the song\n\n\nacousticness_%: Amount of acoustic sound in the song\n\n\ninstrumentalness_%: Amount of instrumental content in the song\n\n\nliveness_%: Presence of live performance elements\n\n\nspeechiness_%: Amount of spoken words in the song"
+  },
+  {
+    "objectID": "general_eda.html#comment-test",
+    "href": "general_eda.html#comment-test",
+    "title": "Section 1",
+    "section": "Comment test",
+    "text": "Comment test\n{{&lt; utterances-comments  &gt;}}"
   }
 ]
