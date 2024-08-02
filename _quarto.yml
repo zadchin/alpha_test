@@ -7,9 +7,10 @@ project:
 execute:
   freeze: auto
   
-comments:
-  giscus:
-    repo: zadchin/alpha_test
+website:
+  comments:
+    giscus:
+      repo: quarto-dev/quarto-web
 
 format:
   revealjs:
