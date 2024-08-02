@@ -5,3 +5,9 @@
 .border-thick {
   border-width: 3px;
 }
+
+/* custom.css */
+.dataTables_wrapper .dataTables_scrollBody {
+    font-size: 10px; /* Adjust the font size as needed */
+    overflow: auto !important;
+}

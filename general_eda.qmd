@@ -1,14 +1,27 @@
 ---
-title: "Section 1"
+title: "RT Session 1"
 format:
   revealjs: 
+    scrollable: true
     multiplex: true
     preview-links: auto
-    logo: images/quarto.png
+    logo: img/rt-logo.webp
     css: styles.css
     gfm:
       mermaid-format: svg
 ---
+
+# Hello
+
+# Icebreaker
+
+## Do you recognize the logo?
+
+![](img/logotest.png){width=100%}
+
+## Shout it Out!
+
+![](img/logotest.png){width=100%}
 
 
 ## About Spotify
@@ -31,8 +44,8 @@ format:
 ```{r}
 library(readr)
 library(DT)
-data_r <- read_csv("spotify2023.csv",show_col_types = FALSE)
-datatable(data_r, options = list(scrollX = TRUE, scrollY = "150px"))
+data_r <- read_csv("spotify2023.csv", show_col_types = FALSE)
+datatable(data_r, options = list(scrollX = TRUE, scrollY = "200px"))
 ```
 
 ::: {.fragment .fade-in}
@@ -341,8 +354,36 @@ Histogram makes it easier to identify patterns, such as skewness, central tenden
 
 ## Visualize
 
+::: {.callout-tip appearance="simple"}
+Select a continuous column to visualize:
+```{ojs}
+cont_columns = ['streams', 'bpm', 'danceability_%', 'valence_%', 'energy_%', 'acousticness_%',
+       'instrumentalness_%', 'liveness_%', 'speechiness_%']
+viewof selected_column = Inputs.radio(cont_columns, {value: 'danceability_%'})
+viewof bin_count = Inputs.range([1, 50], {step: 1, value: 15, label: "Number of Bins"})
 
-## Comment three
+```
+:::
+
+
+```{ojs}
+Plot.plot({
+  marks: [
+    Plot.rectY(data, Plot.binX({y: "count"}, {x: selected_column, fill: "steelblue", thresholds: bin_count}))
+  ],
+  x: {
+    label: selected_column
+  },
+  y: {
+    label: "Count"
+  },
+  color: {
+    legend: false
+  }
+})
+```
+
+## What happened when you increase/decrease the number of bins?
 
 [fix comment for utteranc]{style="color:red;"}
 
@@ -350,13 +391,299 @@ Histogram makes it easier to identify patterns, such as skewness, central tenden
 {{< utterances-comments >}}
 </div>
 
-## And More...
+## What did you observe from the barplot itself
 
--   [Touch](https://quarto.org/docs/presentations/revealjs/advanced.html#touch-navigation) optimized (presentations look great on mobile, swipe to navigate slides)
--   [Footer & Logo](https://quarto.org/docs/presentations/revealjs/#footer-logo) (optionally specify custom footer per-slide)
--   [Auto-Slide](https://quarto.org/docs/presentations/revealjs/presenting.html#auto-slide) (step through slides automatically, without any user input)
--   [Multiplex](https://quarto.org/docs/presentations/revealjs/presenting.html#multiplex) (allows your audience to follow the slides of the presentation you are controlling on their own phone, tablet or laptop).
+[fix comment for utteranc]{style="color:red;"}
 
-::: footer
-Learn more: [Quarto Presentations](https://quarto.org/docs/presentations/revealjs/)
+<div class="utterances-comments">
+{{< utterances-comments >}}
+</div>
+
+# (4) Trend Analysis
+
+## About Trend Analysis
+
+::: {.fragment .fade-in-then-semi-out}
+Trend analysis is the process of examining data over time to identify patterns, trends, and insights. 
 :::
+
+## Why is trend analysis important for Spotify?
+
+[fix comment for utteranc]{style="color:red;"}
+
+<div class="utterances-comments">
+{{< utterances-comments >}}
+</div>
+
+## Understanding Trends for Spotify
+
+::: incremental
+- **Understanding Audience Preferences:** Analyzing music feature trends over time helps identify shifts in listener preferences, enabling better music recommendations and targeted marketing strategies.
+
+- **Predicting Hits:** By recognizing trends in features like danceability or energy, Spotify can anticipate which songs might become popular, aiding in playlist curation and promotional efforts.
+
+- **Adapting to Industry Changes:** Monitoring trends allows Spotify to stay aligned with evolving music genres and production styles, ensuring its catalog remains relevant and appealing to users.
+:::
+
+
+## Visualize
+
+
+::: {.callout-tip appearance="simple"}
+Select a continuous column to visualize:
+```{ojs}
+audio_features = ['danceability_%', 'valence_%', 'energy_%', 'acousticness_%',
+                  'instrumentalness_%', 'liveness_%', 'speechiness_%']
+viewof selected_column_trend = Inputs.radio(audio_features, {value: 'danceability_%'})
+
+// Group the data by 'released_year' and calculate the mean of the audio features
+trends = Array.from(
+  d3.group(data, d => d.released_year),
+  ([released_year, group]) => ({
+    released_year,
+    ...Object.fromEntries(audio_features.map(feature => [
+      feature,
+      d3.mean(group, d => d[feature])
+    ]))
+  })
+)
+
+```
+:::
+
+
+```{ojs}
+sorted_trends = trends.sort((a, b) => a.released_year - b.released_year)
+
+// Create the line plot with the sorted data
+Plot.line(sorted_trends, {x: 'released_year', y: selected_column_trend}).plot()
+```
+
+## What did you observe from the trend analysis?
+
+[fix comment for utteranc]{style="color:red;"}
+
+<div class="utterances-comments">
+{{< utterances-comments >}}
+</div>
+
+
+# (5) Relationship Analysis
+
+
+## Scatterplot
+
+::: incremental
+- A scatterplot is a type of data visualization that displays individual data points on a two-dimensional graph.
+- Each point on the scatterplot represents an observation from a dataset, with its position determined by two variables—one plotted on the x-axis and the other on the y-axis.
+- Scatterplots are commonly used to explore the relationship between two continuous variables to reveal patterns, trends, correlations, or clusters within the data.
+:::
+
+## Linear Regression
+
+::: incremental
+- **Linear regression** is a statistical method used to model and analyze the relationship between two variables by fitting a linear equation to the observed data.
+:::
+
+## Linear Regression
+
+::: {.fragment .fade-in-then-semi-out}
+- The linear equation is typically of the form: $y = mx + c$, where:
+:::
+
+
+::: {.fragment .fade-in-then-semi-out}
+- $y$  is the dependent variable (the outcome we are trying to predict or explain),
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+- $x$  is the independent variable (the predictor or input variable),
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+- $m$   is the slope of the line (indicating the change in $y$ for a unit change in $ x$).
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+- $c$  is the y-intercept (the value of $ y $ when $ x$ is 0).
+:::
+
+
+
+## Linear Regression
+
+::: {.fragment .fade-in-then-semi-out}
+Linear regression helps quantify the strength and direction (positive or negative) of the relationship between the variables.
+:::
+
+
+
+## Visualization {.smaller}
+
+::: columns
+::: {.column width="30%"}
+
+::: {.callout-tip appearance="simple"}
+Select a $x$ column to visualize:
+```{ojs}
+bivariate_cont_columns = ['danceability_%', 'valence_%', 'energy_%', 'acousticness_%',
+                  'instrumentalness_%', 'liveness_%', 'speechiness_%', 'streams']
+
+// Create the radio inputs for selecting X and Y axis columns
+viewof x_column = Inputs.radio(bivariate_cont_columns, {value: 'danceability_%'})
+```
+:::
+
+::: {.callout-tip appearance="simple"}
+Select a $y$ column to visualize:
+```{ojs}
+viewof y_column = Inputs.radio(bivariate_cont_columns, {value: 'streams'})
+```
+:::
+
+:::
+
+
+::: {.column width="70%"}
+```{ojs}
+// Create the scatterplot with a linear regression line
+Plot.plot({
+  marks: [
+    Plot.dot(data, {x: x_column, y: y_column, fill: "#1E2F97", fillOpacity: 0.5}),
+    Plot.linearRegressionY(data, {x: x_column, y: y_column, stroke: "red"})
+  ]
+})
+```
+:::
+:::
+
+
+## Correlation
+
+::: incremental
+- **Correlation** measures how two things are related to each other, like how one changes when the other does.
+- **Positive correlation** means as one thing increases, the other also increases (e.g., more study time, better grades).
+- **Negative correlation** means as one thing increases, the other decreases (e.g., more exercise, lower stress).
+:::
+
+## Correlation Heatmap {.smaller}
+
+::: {.callout-tip appearance="simple"}
+Select Continuous Variables for Correlation Heatmap:
+```{ojs}
+viewof selected_bivariate_cont_columns = Inputs.checkbox(bivariate_cont_columns, {value: bivariate_cont_columns})
+```
+:::
+
+
+```{ojs}
+function calculateCorrelationMatrix(data, selectedColumns) {
+  const n = selectedColumns.length;
+  const correlationMatrix = Array.from({ length: n }, () => Array(n).fill(0));
+
+  function pearsonCorrelation(x, y) {
+    const meanX = d3.mean(x);
+    const meanY = d3.mean(y);
+    const diffX = x.map(d => d - meanX);
+    const diffY = y.map(d => d - meanY);
+    const numerator = d3.sum(diffX.map((d, i) => d * diffY[i]));
+    const denominator = Math.sqrt(d3.sum(diffX.map(d => d * d)) * d3.sum(diffY.map(d => d * d)));
+    return numerator / denominator;
+  }
+
+  for (let i = 0; i < n; i++) {
+    for (let j = 0; j < n; j++) {
+      const col1 = selectedColumns[i];
+      const col2 = selectedColumns[j];
+      const values1 = data.map(d => d[col1]);
+      const values2 = data.map(d => d[col2]);
+      const correlation = pearsonCorrelation(values1, values2);
+      correlationMatrix[i][j] = correlation;
+    }
+  }
+
+  return correlationMatrix;
+}
+
+correlation_matrix = calculateCorrelationMatrix(data, selected_bivariate_cont_columns);
+correlation_data = selected_bivariate_cont_columns.flatMap((col1, i) =>
+  selected_bivariate_cont_columns.map((col2, j) => ({
+    x: col1,
+    y: col2,
+    value: correlation_matrix[i][j]
+  }))
+);
+
+Plot.plot({
+  marks: [
+    Plot.cell(correlation_data, {x: "x", y: "y", fill: "value", title: d => d.value.toFixed(2)}),
+    Plot.text(correlation_data, {x: "x", y: "y", text: d => d.value.toFixed(2), dy: 0, textAnchor: "middle"})
+  ],
+  x: {
+    domain: selected_bivariate_cont_columns,
+    label: "Variables"
+  },
+  y: {
+    domain: selected_bivariate_cont_columns,
+    label: "Variables"
+  },
+  color: {
+    type: "linear",
+    scheme: "blues",
+    label: "Correlation"
+  },
+  width: 600,
+  height: 600
+})
+
+
+```
+
+## What did you observe?
+
+[fix comment for utteranc]{style="color:red;"}
+
+<div class="utterances-comments">
+{{< utterances-comments >}}
+</div>
+
+## Why is finding correlation and relationship analysis on features important?
+
+[fix comment for utteranc]{style="color:red;"}
+
+<div class="utterances-comments">
+{{< utterances-comments >}}
+</div>
+
+
+## Why is finding correlation and relationship analysis on features important?
+
+::: incremental
+- *Music Production insights**: Knowing what is related to danceability let’s said makes music producer able to understand what makes a good music
+- **Marketing & Promotion Strategies** : Knowsing what is the relationship between top performing songs and its features is important as it helps the platform to recommend same type fo songs for users in the future.
+:::
+
+
+# AI & EDA
+
+## From Relationships to Decisions: Enter AI
+
+::: incremental
+- **Understanding Relationships**: Now that you know how to explore relationships in data, the next step is using AI to make decisions based on these insights.
+- **Why AI is Needed**: 
+  - **Scale**: AI can analyze vast amounts of data quickly, something humans can't do daily.
+  - **Efficiency**: AI can identify patterns and trends in data automatically, enabling faster and more accurate decisions.
+:::
+
+## Example: AI in Action
+
+::: incremental
+  -  AI groups similar data points (like songs or users) without needing pre-labeled examples.
+  - **Example 1**: Grouping songs by genre, mood, or tempo to create better recommendations without manual analysis.
+  - **Example 2**: Spotify Wrap:
+    - **How It Works**: AI analyzes your listening habits, clusters you with similar users, and creates personalized playlists.
+    - **Benefits**: Tailored music recommendations, targeted ads, and a deeper understanding of user preferences.
+:::
+
+
+# Thank You!

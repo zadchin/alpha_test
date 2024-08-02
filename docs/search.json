@@ -1,688 +1,296 @@
 [
   {
-    "objectID": "index.html#hello-there",
-    "href": "index.html#hello-there",
+    "objectID": "general_eda.html#do-you-recognize-the-logo",
+    "href": "general_eda.html#do-you-recognize-the-logo",
     "title": "Exploratory Data Analysis",
-    "section": "Hello, There",
-    "text": "Hello, There\nThis presentation will show you examples of what you can do with Quarto and Reveal.js, including:\n\nPresenting code and LaTeX equations\nIncluding computations in slide output\nImage, video, and iframe backgrounds\nFancy transitions and animations\nPrinting to PDF\n\n…and much more"
+    "section": "Do you recognize the logo?",
+    "text": "Do you recognize the logo?"
   },
   {
-    "objectID": "index.html#pretty-code",
-    "href": "index.html#pretty-code",
+    "objectID": "general_eda.html#shout-it-out",
+    "href": "general_eda.html#shout-it-out",
     "title": "Exploratory Data Analysis",
-    "section": "Pretty Code",
-    "text": "Pretty Code\n\nOver 20 syntax highlighting themes available\nDefault theme optimized for accessibility\n\n# Define a server for the Shiny app\nfunction(input, output) {\n  \n  # Fill in the spot we created for a plot\n  output$phonePlot &lt;- renderPlot({\n    # Render a barplot\n  })\n}\n\nLearn more: Syntax Highlighting"
-  },
-  {
-    "objectID": "index.html#code-animations",
-    "href": "index.html#code-animations",
-    "title": "Exploratory Data Analysis",
-    "section": "Code Animations",
-    "text": "Code Animations\n\nOver 20 syntax highlighting themes available\nDefault theme optimized for accessibility\n\n# Define a server for the Shiny app\nfunction(input, output) {\n  \n  # Fill in the spot we created for a plot\n  output$phonePlot &lt;- renderPlot({\n    # Render a barplot\n    barplot(WorldPhones[,input$region]*1000, \n            main=input$region,\n            ylab=\"Number of Telephones\",\n            xlab=\"Year\")\n  })\n}\n\nLearn more: Code Animations"
-  },
-  {
-    "objectID": "index.html#line-highlighting",
-    "href": "index.html#line-highlighting",
-    "title": "Exploratory Data Analysis",
-    "section": "Line Highlighting",
-    "text": "Line Highlighting\n\nHighlight specific lines for emphasis\nIncrementally highlight additional lines\n\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(subplot_kw={'projection': 'polar'})\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n\nLearn more: Line Highlighting"
-  },
-  {
-    "objectID": "index.html#executable-code",
-    "href": "index.html#executable-code",
-    "title": "Exploratory Data Analysis",
-    "section": "Executable Code",
-    "text": "Executable Code\n\nlibrary(ggplot2)\nggplot(mtcars, aes(hp, mpg, color = am)) +\n  geom_point() +\n  geom_smooth(formula = y ~ x, method = \"loess\")\n\n\n\nLearn more: Executable Code"
-  },
-  {
-    "objectID": "index.html#latex-equations",
-    "href": "index.html#latex-equations",
-    "title": "Exploratory Data Analysis",
-    "section": "LaTeX Equations",
-    "text": "LaTeX Equations\nMathJax rendering of equations to HTML\n\n\n\\begin{gather*}\na_1=b_1+c_1\\\\\na_2=b_2+c_2-d_2+e_2\n\\end{gather*}\n\n\\begin{align}\na_{11}& =b_{11}&\n  a_{12}& =b_{12}\\\\\na_{21}& =b_{21}&\n  a_{22}& =b_{22}+c_{22}\n\\end{align}\n\n\\[\\begin{gather*}\na_1=b_1+c_1\\\\\na_2=b_2+c_2-d_2+e_2\n\\end{gather*}\\]\n\\[\\begin{align}\na_{11}& =b_{11}&\n  a_{12}& =b_{12}\\\\\na_{21}& =b_{21}&\n  a_{22}& =b_{22}+c_{22}\n\\end{align}\\]\n\n\nLearn more: LaTeX Equations"
-  },
-  {
-    "objectID": "index.html#column-layout",
-    "href": "index.html#column-layout",
-    "title": "Exploratory Data Analysis",
-    "section": "Column Layout",
-    "text": "Column Layout\nArrange content into columns of varying widths:\n\n\nMotor Trend Car Road Tests\nThe data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles.\n\n\n\n\n\n\n\n\n\nmpg\ncyl\ndisp\nhp\nwt\n\n\n\n\nMazda RX4\n21.0\n6\n160\n110\n2.620\n\n\nMazda RX4 Wag\n21.0\n6\n160\n110\n2.875\n\n\nDatsun 710\n22.8\n4\n108\n93\n2.320\n\n\nHornet 4 Drive\n21.4\n6\n258\n110\n3.215\n\n\nHornet Sportabout\n18.7\n8\n360\n175\n3.440\n\n\nValiant\n18.1\n6\n225\n105\n3.460\n\n\n\n\n\n\n\nLearn more: Multiple Columns"
-  },
-  {
-    "objectID": "index.html#incremental-lists",
-    "href": "index.html#incremental-lists",
-    "title": "Exploratory Data Analysis",
-    "section": "Incremental Lists",
-    "text": "Incremental Lists\nLists can optionally be displayed incrementally:\n\n\nFirst item\nSecond item\nThird item\n\n\n\n Insert pauses to make other types of content display incrementally.\n\nLearn more: Incremental Lists"
-  },
-  {
-    "objectID": "index.html#fragments",
-    "href": "index.html#fragments",
-    "title": "Exploratory Data Analysis",
-    "section": "Fragments",
-    "text": "Fragments\nIncremental text display and animation with fragments:\n\n\nFade in\n\n\nSlide up while fading in\n\n\nSlide left while fading in\n\n\nFade in then semi out\n\n\n\nStrike\n\n\nHighlight red\n\n\nLearn more: Fragments"
-  },
-  {
-    "objectID": "index.html#slide-backgrounds",
-    "href": "index.html#slide-backgrounds",
-    "title": "Exploratory Data Analysis",
-    "section": "Slide Backgrounds",
-    "text": "Slide Backgrounds\nSet the background attribute on a slide to change the background color (all CSS color formats are supported).\nDifferent background transitions are available via the background-transition option.\n\nLearn more: Slide Backgrounds"
-  },
-  {
-    "objectID": "index.html#media-backgrounds",
-    "href": "index.html#media-backgrounds",
-    "title": "Exploratory Data Analysis",
-    "section": "Media Backgrounds",
-    "text": "Media Backgrounds\nYou can also use the following as a slide background:\n\nAn image: background-image\nA video: background-video\nAn iframe: background-iframe\n\n\nLearn more: Media Backgrounds"
-  },
-  {
-    "objectID": "index.html#absolute-position",
-    "href": "index.html#absolute-position",
-    "title": "Exploratory Data Analysis",
-    "section": "Absolute Position",
-    "text": "Absolute Position\nPosition images or other elements at precise locations\n\n\n\n\nLearn more: Absolute Position"
-  },
-  {
-    "objectID": "index.html#auto-animate",
-    "href": "index.html#auto-animate",
-    "title": "Exploratory Data Analysis",
-    "section": "Auto-Animate",
-    "text": "Auto-Animate\nAutomatically animate matching elements across slides with Auto-Animate.\n\n\n\n\n\n\n\n\n\n\n\n\nLearn more: Auto-Animate"
-  },
-  {
-    "objectID": "index.html#auto-animate-1",
-    "href": "index.html#auto-animate-1",
-    "title": "Exploratory Data Analysis",
-    "section": "Auto-Animate",
-    "text": "Auto-Animate\nAutomatically animate matching elements across slides with Auto-Animate.\n\n\n\n\n\n\n\n\n\n\n\n\nLearn more: Auto-Animate"
-  },
-  {
-    "objectID": "index.html#slide-transitions",
-    "href": "index.html#slide-transitions",
-    "title": "Exploratory Data Analysis",
-    "section": "Slide Transitions",
-    "text": "Slide Transitions\nThe next few slides will transition using the slide transition\n\n\n\n\n\n\n\nTransition\nDescription\n\n\n\n\nnone\nNo transition (default, switch instantly)\n\n\nfade\nCross fade\n\n\nslide\nSlide horizontally\n\n\nconvex\nSlide at a convex angle\n\n\nconcave\nSlide at a concave angle\n\n\nzoom\nScale the incoming slide so it grows in from the center of the screen.\n\n\n\n\nLearn more: Slide Transitions"
-  },
-  {
-    "objectID": "index.html#tabsets",
-    "href": "index.html#tabsets",
-    "title": "Exploratory Data Analysis",
-    "section": "Tabsets",
-    "text": "Tabsets\n\nPlotData\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nmpg\ncyl\ndisp\nhp\ndrat\nwt\nqsec\nvs\nam\ngear\ncarb\n\n\n\n\nMazda RX4\n21.0\n6\n160.0\n110\n3.90\n2.620\n16.46\n0\n1\n4\n4\n\n\nMazda RX4 Wag\n21.0\n6\n160.0\n110\n3.90\n2.875\n17.02\n0\n1\n4\n4\n\n\nDatsun 710\n22.8\n4\n108.0\n93\n3.85\n2.320\n18.61\n1\n1\n4\n1\n\n\nHornet 4 Drive\n21.4\n6\n258.0\n110\n3.08\n3.215\n19.44\n1\n0\n3\n1\n\n\nHornet Sportabout\n18.7\n8\n360.0\n175\n3.15\n3.440\n17.02\n0\n0\n3\n2\n\n\nValiant\n18.1\n6\n225.0\n105\n2.76\n3.460\n20.22\n1\n0\n3\n1\n\n\nDuster 360\n14.3\n8\n360.0\n245\n3.21\n3.570\n15.84\n0\n0\n3\n4\n\n\nMerc 240D\n24.4\n4\n146.7\n62\n3.69\n3.190\n20.00\n1\n0\n4\n2\n\n\nMerc 230\n22.8\n4\n140.8\n95\n3.92\n3.150\n22.90\n1\n0\n4\n2\n\n\nMerc 280\n19.2\n6\n167.6\n123\n3.92\n3.440\n18.30\n1\n0\n4\n4\n\n\nMerc 280C\n17.8\n6\n167.6\n123\n3.92\n3.440\n18.90\n1\n0\n4\n4\n\n\nMerc 450SE\n16.4\n8\n275.8\n180\n3.07\n4.070\n17.40\n0\n0\n3\n3\n\n\nMerc 450SL\n17.3\n8\n275.8\n180\n3.07\n3.730\n17.60\n0\n0\n3\n3\n\n\nMerc 450SLC\n15.2\n8\n275.8\n180\n3.07\n3.780\n18.00\n0\n0\n3\n3\n\n\nCadillac Fleetwood\n10.4\n8\n472.0\n205\n2.93\n5.250\n17.98\n0\n0\n3\n4\n\n\nLincoln Continental\n10.4\n8\n460.0\n215\n3.00\n5.424\n17.82\n0\n0\n3\n4\n\n\nChrysler Imperial\n14.7\n8\n440.0\n230\n3.23\n5.345\n17.42\n0\n0\n3\n4\n\n\nFiat 128\n32.4\n4\n78.7\n66\n4.08\n2.200\n19.47\n1\n1\n4\n1\n\n\nHonda Civic\n30.4\n4\n75.7\n52\n4.93\n1.615\n18.52\n1\n1\n4\n2\n\n\nToyota Corolla\n33.9\n4\n71.1\n65\n4.22\n1.835\n19.90\n1\n1\n4\n1\n\n\nToyota Corona\n21.5\n4\n120.1\n97\n3.70\n2.465\n20.01\n1\n0\n3\n1\n\n\nDodge Challenger\n15.5\n8\n318.0\n150\n2.76\n3.520\n16.87\n0\n0\n3\n2\n\n\nAMC Javelin\n15.2\n8\n304.0\n150\n3.15\n3.435\n17.30\n0\n0\n3\n2\n\n\nCamaro Z28\n13.3\n8\n350.0\n245\n3.73\n3.840\n15.41\n0\n0\n3\n4\n\n\nPontiac Firebird\n19.2\n8\n400.0\n175\n3.08\n3.845\n17.05\n0\n0\n3\n2\n\n\nFiat X1-9\n27.3\n4\n79.0\n66\n4.08\n1.935\n18.90\n1\n1\n4\n1\n\n\nPorsche 914-2\n26.0\n4\n120.3\n91\n4.43\n2.140\n16.70\n0\n1\n5\n2\n\n\nLotus Europa\n30.4\n4\n95.1\n113\n3.77\n1.513\n16.90\n1\n1\n5\n2\n\n\nFord Pantera L\n15.8\n8\n351.0\n264\n4.22\n3.170\n14.50\n0\n1\n5\n4\n\n\nFerrari Dino\n19.7\n6\n145.0\n175\n3.62\n2.770\n15.50\n0\n1\n5\n6\n\n\nMaserati Bora\n15.0\n8\n301.0\n335\n3.54\n3.570\n14.60\n0\n1\n5\n8\n\n\nVolvo 142E\n21.4\n4\n121.0\n109\n4.11\n2.780\n18.60\n1\n1\n4\n2\n\n\n\n\n\n\n\n\n\nLearn more: Jupyter widgets, htmlwidgets"
-  },
-  {
-    "objectID": "index.html#interactive-slides",
-    "href": "index.html#interactive-slides",
-    "title": "Exploratory Data Analysis",
-    "section": "Interactive Slides",
-    "text": "Interactive Slides\nTurn presentations into applications with Observable and Shiny. Use component layout to position inputs and outputs.\n\n\nviewof talentWeight = Inputs.range([-2, 2], { value: 0.7, step: 0.01, label: \"talent weight\" })\nviewof looksWeight = Inputs.range([-2, 2], { value: 0.7, step: 0.01, label: \"looks weight\" })\nviewof minimum = Inputs.range([-2, 2], { value: 1, step: 0.01, label: \"min fame\" })\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nimport { plotActors } from './actors.js';\nplotActors(actors, talentWeight, looksWeight, minimum)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLearn more: Observable, Shiny, Component Layout"
-  },
-  {
-    "objectID": "index.html#preview-links",
-    "href": "index.html#preview-links",
-    "title": "Exploratory Data Analysis",
-    "section": "Preview Links",
-    "text": "Preview Links\nNavigate to hyperlinks without disrupting the flow of your presentation.\nUse the preview-links option to open links in an iframe on top of your slides. Try clicking the link below for a demonstration:\n\nMatplotlib: Visualization with Python\n\n\nLearn more: Preview Links"
-  },
-  {
-    "objectID": "index.html#themes",
-    "href": "index.html#themes",
-    "title": "Exploratory Data Analysis",
-    "section": "Themes",
-    "text": "Themes\n10 Built-in Themes (or create your own)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLearn more: Themes"
-  },
-  {
-    "objectID": "index.html#easy-navigation",
-    "href": "index.html#easy-navigation",
-    "title": "Exploratory Data Analysis",
-    "section": "Easy Navigation",
-    "text": "Easy Navigation\n\nQuickly jump to other parts of your presentation\n\n\n\n\n\n\n\n\n\n\nToggle the slide menu with the menu button (bottom left of slide) to go to other slides and access presentation tools.\n\n\n\nYou can also press m to toggle the menu open and closed.\n\nLearn more: Navigation"
-  },
-  {
-    "objectID": "index.html#chalkboard",
-    "href": "index.html#chalkboard",
-    "title": "Exploratory Data Analysis",
-    "section": "Chalkboard",
-    "text": "Chalkboard\n\nFree form drawing and slide annotations\n\n\n\n\n\n\n\n\n\n\nUse the chalkboard button at the bottom left of the slide to toggle the chalkboard.\n\n\n\n\n\n\n\n\n\n\n\n\nUse the notes canvas button at the bottom left of the slide to toggle drawing on top of the current slide.\n\n\n\nYou can also press b to toggle the chalkboard or c to toggle the notes canvas.\n\nLearn more: Chalkboard"
-  },
-  {
-    "objectID": "index.html#point-of-view",
-    "href": "index.html#point-of-view",
-    "title": "Exploratory Data Analysis",
-    "section": "Point of View",
-    "text": "Point of View\nPress o to toggle overview mode:\n\nHold down the Alt key (or Ctrl in Linux) and click on any element to zoom towards it—try it now on this slide.\n\nLearn more: Overview Mode, Slide Zoom"
-  },
-  {
-    "objectID": "index.html#speaker-view",
-    "href": "index.html#speaker-view",
-    "title": "Exploratory Data Analysis",
-    "section": "Speaker View",
-    "text": "Speaker View\nPress s (or use the presentation menu) to open speaker view\n\n\nLearn more: Speaker View"
-  },
-  {
-    "objectID": "index.html#authoring-tools",
-    "href": "index.html#authoring-tools",
-    "title": "Exploratory Data Analysis",
-    "section": "Authoring Tools",
-    "text": "Authoring Tools\nLive side-by-side preview for any notebook or text editor including Jupyter and VS Code\n\n\n\n\n\n\n\nLearn more: Jupyter, VS Code, Text Editors"
-  },
-  {
-    "objectID": "index.html#authoring-tools-1",
-    "href": "index.html#authoring-tools-1",
-    "title": "Exploratory Data Analysis",
-    "section": "Authoring Tools",
-    "text": "Authoring Tools\nRStudio includes an integrated presentation preview pane\n\n\nLearn more: RStudio"
-  },
-  {
-    "objectID": "index.html#and-more",
-    "href": "index.html#and-more",
-    "title": "Exploratory Data Analysis",
-    "section": "And More…",
-    "text": "And More…\n\nTouch optimized (presentations look great on mobile, swipe to navigate slides)\nFooter & Logo (optionally specify custom footer per-slide)\nAuto-Slide (step through slides automatically, without any user input)\nMultiplex (allows your audience to follow the slides of the presentation you are controlling on their own phone, tablet or laptop).\n\n\nLearn more: Quarto Presentations"
-  },
-  {
-    "objectID": "01.html#hello-there",
-    "href": "01.html#hello-there",
-    "title": "Section 1",
-    "section": "Hello, There",
-    "text": "Hello, There\nThis presentation will show you examples of what you can do with Quarto and Reveal.js, including:\n\nPresenting code and LaTeX equations\nIncluding computations in slide output\nImage, video, and iframe backgrounds\nFancy transitions and animations\nPrinting to PDF\n\n…and much more"
-  },
-  {
-    "objectID": "01.html#pretty-code",
-    "href": "01.html#pretty-code",
-    "title": "Section 1",
-    "section": "Pretty Code",
-    "text": "Pretty Code\n\nOver 20 syntax highlighting themes available\nDefault theme optimized for accessibility\n\n# Define a server for the Shiny app\nfunction(input, output) {\n  \n  # Fill in the spot we created for a plot\n  output$phonePlot &lt;- renderPlot({\n    # Render a barplot\n  })\n}\n\nLearn more: Syntax Highlighting"
-  },
-  {
-    "objectID": "01.html#code-animations",
-    "href": "01.html#code-animations",
-    "title": "Section 1",
-    "section": "Code Animations",
-    "text": "Code Animations\n\nOver 20 syntax highlighting themes available\nDefault theme optimized for accessibility\n\n# Define a server for the Shiny app\nfunction(input, output) {\n  \n  # Fill in the spot we created for a plot\n  output$phonePlot &lt;- renderPlot({\n    # Render a barplot\n    barplot(WorldPhones[,input$region]*1000, \n            main=input$region,\n            ylab=\"Number of Telephones\",\n            xlab=\"Year\")\n  })\n}\n\nLearn more: Code Animations"
-  },
-  {
-    "objectID": "01.html#line-highlighting",
-    "href": "01.html#line-highlighting",
-    "title": "Section 1",
-    "section": "Line Highlighting",
-    "text": "Line Highlighting\n\nHighlight specific lines for emphasis\nIncrementally highlight additional lines\n\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(subplot_kw={'projection': 'polar'})\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n\nLearn more: Line Highlighting"
-  },
-  {
-    "objectID": "01.html#executable-code",
-    "href": "01.html#executable-code",
-    "title": "Section 1",
-    "section": "Executable Code",
-    "text": "Executable Code\n\nlibrary(ggplot2)\nggplot(mtcars, aes(hp, mpg, color = am)) +\n  geom_point() +\n  geom_smooth(formula = y ~ x, method = \"loess\")\n\n\n\nLearn more: Executable Code"
-  },
-  {
-    "objectID": "01.html#latex-equations",
-    "href": "01.html#latex-equations",
-    "title": "Section 1",
-    "section": "LaTeX Equations",
-    "text": "LaTeX Equations\nMathJax rendering of equations to HTML\n\n\n\\begin{gather*}\na_1=b_1+c_1\\\\\na_2=b_2+c_2-d_2+e_2\n\\end{gather*}\n\n\\begin{align}\na_{11}& =b_{11}&\n  a_{12}& =b_{12}\\\\\na_{21}& =b_{21}&\n  a_{22}& =b_{22}+c_{22}\n\\end{align}\n\n\\[\\begin{gather*}\na_1=b_1+c_1\\\\\na_2=b_2+c_2-d_2+e_2\n\\end{gather*}\\]\n\\[\\begin{align}\na_{11}& =b_{11}&\n  a_{12}& =b_{12}\\\\\na_{21}& =b_{21}&\n  a_{22}& =b_{22}+c_{22}\n\\end{align}\\]\n\n\nLearn more: LaTeX Equations"
-  },
-  {
-    "objectID": "01.html#column-layout",
-    "href": "01.html#column-layout",
-    "title": "Section 1",
-    "section": "Column Layout",
-    "text": "Column Layout\nArrange content into columns of varying widths:\n\n\nMotor Trend Car Road Tests\nThe data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles.\n\n\n\n\n\n\n\n\n\nmpg\ncyl\ndisp\nhp\nwt\n\n\n\n\nMazda RX4\n21.0\n6\n160\n110\n2.620\n\n\nMazda RX4 Wag\n21.0\n6\n160\n110\n2.875\n\n\nDatsun 710\n22.8\n4\n108\n93\n2.320\n\n\nHornet 4 Drive\n21.4\n6\n258\n110\n3.215\n\n\nHornet Sportabout\n18.7\n8\n360\n175\n3.440\n\n\nValiant\n18.1\n6\n225\n105\n3.460\n\n\n\n\n\n\n\nLearn more: Multiple Columns"
-  },
-  {
-    "objectID": "01.html#incremental-lists",
-    "href": "01.html#incremental-lists",
-    "title": "Section 1",
-    "section": "Incremental Lists",
-    "text": "Incremental Lists\nLists can optionally be displayed incrementally:\n\n\nFirst item\nSecond item\nThird item\n\n\n\n Insert pauses to make other types of content display incrementally.\n\nLearn more: Incremental Lists"
-  },
-  {
-    "objectID": "01.html#fragments",
-    "href": "01.html#fragments",
-    "title": "Section 1",
-    "section": "Fragments",
-    "text": "Fragments\nIncremental text display and animation with fragments:\n\n\nFade in\n\n\nSlide up while fading in\n\n\nSlide left while fading in\n\n\nFade in then semi out\n\n\n\nStrike\n\n\nHighlight red\n\n\nLearn more: Fragments"
-  },
-  {
-    "objectID": "01.html#slide-backgrounds",
-    "href": "01.html#slide-backgrounds",
-    "title": "Section 1",
-    "section": "Slide Backgrounds",
-    "text": "Slide Backgrounds\nSet the background attribute on a slide to change the background color (all CSS color formats are supported).\nDifferent background transitions are available via the background-transition option.\n\nLearn more: Slide Backgrounds"
-  },
-  {
-    "objectID": "01.html#media-backgrounds",
-    "href": "01.html#media-backgrounds",
-    "title": "Section 1",
-    "section": "Media Backgrounds",
-    "text": "Media Backgrounds\nYou can also use the following as a slide background:\n\nAn image: background-image\nA video: background-video\nAn iframe: background-iframe\n\n\nLearn more: Media Backgrounds"
-  },
-  {
-    "objectID": "01.html#absolute-position",
-    "href": "01.html#absolute-position",
-    "title": "Section 1",
-    "section": "Absolute Position",
-    "text": "Absolute Position\nPosition images or other elements at precise locations\n\n\n\n\nLearn more: Absolute Position"
-  },
-  {
-    "objectID": "01.html#auto-animate",
-    "href": "01.html#auto-animate",
-    "title": "Section 1",
-    "section": "Auto-Animate",
-    "text": "Auto-Animate\nAutomatically animate matching elements across slides with Auto-Animate.\n\n\n\n\n\n\n\n\n\n\n\n\nLearn more: Auto-Animate"
-  },
-  {
-    "objectID": "01.html#auto-animate-1",
-    "href": "01.html#auto-animate-1",
-    "title": "Section 1",
-    "section": "Auto-Animate",
-    "text": "Auto-Animate\nAutomatically animate matching elements across slides with Auto-Animate.\n\n\n\n\n\n\n\n\n\n\n\n\nLearn more: Auto-Animate"
-  },
-  {
-    "objectID": "01.html#slide-transitions",
-    "href": "01.html#slide-transitions",
-    "title": "Section 1",
-    "section": "Slide Transitions",
-    "text": "Slide Transitions\nThe next few slides will transition using the slide transition\n\n\n\n\n\n\n\nTransition\nDescription\n\n\n\n\nnone\nNo transition (default, switch instantly)\n\n\nfade\nCross fade\n\n\nslide\nSlide horizontally\n\n\nconvex\nSlide at a convex angle\n\n\nconcave\nSlide at a concave angle\n\n\nzoom\nScale the incoming slide so it grows in from the center of the screen.\n\n\n\n\nLearn more: Slide Transitions"
-  },
-  {
-    "objectID": "01.html#tabsets",
-    "href": "01.html#tabsets",
-    "title": "Section 1",
-    "section": "Tabsets",
-    "text": "Tabsets\n\nPlotData\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nmpg\ncyl\ndisp\nhp\ndrat\nwt\nqsec\nvs\nam\ngear\ncarb\n\n\n\n\nMazda RX4\n21.0\n6\n160.0\n110\n3.90\n2.620\n16.46\n0\n1\n4\n4\n\n\nMazda RX4 Wag\n21.0\n6\n160.0\n110\n3.90\n2.875\n17.02\n0\n1\n4\n4\n\n\nDatsun 710\n22.8\n4\n108.0\n93\n3.85\n2.320\n18.61\n1\n1\n4\n1\n\n\nHornet 4 Drive\n21.4\n6\n258.0\n110\n3.08\n3.215\n19.44\n1\n0\n3\n1\n\n\nHornet Sportabout\n18.7\n8\n360.0\n175\n3.15\n3.440\n17.02\n0\n0\n3\n2\n\n\nValiant\n18.1\n6\n225.0\n105\n2.76\n3.460\n20.22\n1\n0\n3\n1\n\n\nDuster 360\n14.3\n8\n360.0\n245\n3.21\n3.570\n15.84\n0\n0\n3\n4\n\n\nMerc 240D\n24.4\n4\n146.7\n62\n3.69\n3.190\n20.00\n1\n0\n4\n2\n\n\nMerc 230\n22.8\n4\n140.8\n95\n3.92\n3.150\n22.90\n1\n0\n4\n2\n\n\nMerc 280\n19.2\n6\n167.6\n123\n3.92\n3.440\n18.30\n1\n0\n4\n4\n\n\nMerc 280C\n17.8\n6\n167.6\n123\n3.92\n3.440\n18.90\n1\n0\n4\n4\n\n\nMerc 450SE\n16.4\n8\n275.8\n180\n3.07\n4.070\n17.40\n0\n0\n3\n3\n\n\nMerc 450SL\n17.3\n8\n275.8\n180\n3.07\n3.730\n17.60\n0\n0\n3\n3\n\n\nMerc 450SLC\n15.2\n8\n275.8\n180\n3.07\n3.780\n18.00\n0\n0\n3\n3\n\n\nCadillac Fleetwood\n10.4\n8\n472.0\n205\n2.93\n5.250\n17.98\n0\n0\n3\n4\n\n\nLincoln Continental\n10.4\n8\n460.0\n215\n3.00\n5.424\n17.82\n0\n0\n3\n4\n\n\nChrysler Imperial\n14.7\n8\n440.0\n230\n3.23\n5.345\n17.42\n0\n0\n3\n4\n\n\nFiat 128\n32.4\n4\n78.7\n66\n4.08\n2.200\n19.47\n1\n1\n4\n1\n\n\nHonda Civic\n30.4\n4\n75.7\n52\n4.93\n1.615\n18.52\n1\n1\n4\n2\n\n\nToyota Corolla\n33.9\n4\n71.1\n65\n4.22\n1.835\n19.90\n1\n1\n4\n1\n\n\nToyota Corona\n21.5\n4\n120.1\n97\n3.70\n2.465\n20.01\n1\n0\n3\n1\n\n\nDodge Challenger\n15.5\n8\n318.0\n150\n2.76\n3.520\n16.87\n0\n0\n3\n2\n\n\nAMC Javelin\n15.2\n8\n304.0\n150\n3.15\n3.435\n17.30\n0\n0\n3\n2\n\n\nCamaro Z28\n13.3\n8\n350.0\n245\n3.73\n3.840\n15.41\n0\n0\n3\n4\n\n\nPontiac Firebird\n19.2\n8\n400.0\n175\n3.08\n3.845\n17.05\n0\n0\n3\n2\n\n\nFiat X1-9\n27.3\n4\n79.0\n66\n4.08\n1.935\n18.90\n1\n1\n4\n1\n\n\nPorsche 914-2\n26.0\n4\n120.3\n91\n4.43\n2.140\n16.70\n0\n1\n5\n2\n\n\nLotus Europa\n30.4\n4\n95.1\n113\n3.77\n1.513\n16.90\n1\n1\n5\n2\n\n\nFord Pantera L\n15.8\n8\n351.0\n264\n4.22\n3.170\n14.50\n0\n1\n5\n4\n\n\nFerrari Dino\n19.7\n6\n145.0\n175\n3.62\n2.770\n15.50\n0\n1\n5\n6\n\n\nMaserati Bora\n15.0\n8\n301.0\n335\n3.54\n3.570\n14.60\n0\n1\n5\n8\n\n\nVolvo 142E\n21.4\n4\n121.0\n109\n4.11\n2.780\n18.60\n1\n1\n4\n2\n\n\n\n\n\n\n\n\n\nLearn more: Jupyter widgets, htmlwidgets"
-  },
-  {
-    "objectID": "01.html#interactive-slides",
-    "href": "01.html#interactive-slides",
-    "title": "Section 1",
-    "section": "Interactive Slides",
-    "text": "Interactive Slides\nTurn presentations into applications with Observable and Shiny. Use component layout to position inputs and outputs.\n\n\nviewof talentWeight = Inputs.range([-2, 2], { value: 0.7, step: 0.01, label: \"talent weight\" })\nviewof looksWeight = Inputs.range([-2, 2], { value: 0.7, step: 0.01, label: \"looks weight\" })\nviewof minimum = Inputs.range([-2, 2], { value: 1, step: 0.01, label: \"min fame\" })\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nimport { plotActors } from './actors.js';\nplotActors(actors, talentWeight, looksWeight, minimum)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLearn more: Observable, Shiny, Component Layout"
-  },
-  {
-    "objectID": "01.html#preview-links",
-    "href": "01.html#preview-links",
-    "title": "Section 1",
-    "section": "Preview Links",
-    "text": "Preview Links\nNavigate to hyperlinks without disrupting the flow of your presentation.\nUse the preview-links option to open links in an iframe on top of your slides. Try clicking the link below for a demonstration:\n\nMatplotlib: Visualization with Python\n\n\nLearn more: Preview Links"
-  },
-  {
-    "objectID": "01.html#themes",
-    "href": "01.html#themes",
-    "title": "Section 1",
-    "section": "Themes",
-    "text": "Themes\n10 Built-in Themes (or create your own)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLearn more: Themes"
-  },
-  {
-    "objectID": "01.html#easy-navigation",
-    "href": "01.html#easy-navigation",
-    "title": "Section 1",
-    "section": "Easy Navigation",
-    "text": "Easy Navigation\n\nQuickly jump to other parts of your presentation\n\n\n\n\n\n\n\n\n\n\nToggle the slide menu with the menu button (bottom left of slide) to go to other slides and access presentation tools.\n\n\n\nYou can also press m to toggle the menu open and closed.\n\nLearn more: Navigation"
-  },
-  {
-    "objectID": "01.html#chalkboard",
-    "href": "01.html#chalkboard",
-    "title": "Section 1",
-    "section": "Chalkboard",
-    "text": "Chalkboard\n\nFree form drawing and slide annotations\n\n\n\n\n\n\n\n\n\n\nUse the chalkboard button at the bottom left of the slide to toggle the chalkboard.\n\n\n\n\n\n\n\n\n\n\n\n\nUse the notes canvas button at the bottom left of the slide to toggle drawing on top of the current slide.\n\n\n\nYou can also press b to toggle the chalkboard or c to toggle the notes canvas.\n\nLearn more: Chalkboard"
-  },
-  {
-    "objectID": "01.html#point-of-view",
-    "href": "01.html#point-of-view",
-    "title": "Section 1",
-    "section": "Point of View",
-    "text": "Point of View\nPress o to toggle overview mode:\n\nHold down the Alt key (or Ctrl in Linux) and click on any element to zoom towards it—try it now on this slide.\n\nLearn more: Overview Mode, Slide Zoom"
-  },
-  {
-    "objectID": "01.html#speaker-view",
-    "href": "01.html#speaker-view",
-    "title": "Section 1",
-    "section": "Speaker View",
-    "text": "Speaker View\nPress s (or use the presentation menu) to open speaker view\n\n\nLearn more: Speaker View"
-  },
-  {
-    "objectID": "01.html#authoring-tools",
-    "href": "01.html#authoring-tools",
-    "title": "Section 1",
-    "section": "Authoring Tools",
-    "text": "Authoring Tools\nLive side-by-side preview for any notebook or text editor including Jupyter and VS Code\n\n\n\n\n\n\n\nLearn more: Jupyter, VS Code, Text Editors"
-  },
-  {
-    "objectID": "01.html#authoring-tools-1",
-    "href": "01.html#authoring-tools-1",
-    "title": "Section 1",
-    "section": "Authoring Tools",
-    "text": "Authoring Tools\nRStudio includes an integrated presentation preview pane\n\n\nLearn more: RStudio"
-  },
-  {
-    "objectID": "01.html#and-more",
-    "href": "01.html#and-more",
-    "title": "Section 1",
-    "section": "And More…",
-    "text": "And More…\n\nTouch optimized (presentations look great on mobile, swipe to navigate slides)\nFooter & Logo (optionally specify custom footer per-slide)\nAuto-Slide (step through slides automatically, without any user input)\nMultiplex (allows your audience to follow the slides of the presentation you are controlling on their own phone, tablet or laptop).\n\n\nLearn more: Quarto Presentations"
-  },
-  {
-    "objectID": "index.html#different-pages",
-    "href": "index.html#different-pages",
-    "title": "Exploratory Data Analysis",
-    "section": "Different Pages",
-    "text": "Different Pages\n\nEDA"
-  },
-  {
-    "objectID": "general_eda.html#hello-there",
-    "href": "general_eda.html#hello-there",
-    "title": "Section 1",
-    "section": "Hello, There",
-    "text": "Hello, There\nThis presentation will show you examples of what you can do with Quarto and Reveal.js, including:\n\nPresenting code and LaTeX equations\nIncluding computations in slide output\nImage, video, and iframe backgrounds\nFancy transitions and animations\nPrinting to PDF\n\n…and much more"
-  },
-  {
-    "objectID": "general_eda.html#pretty-code",
-    "href": "general_eda.html#pretty-code",
-    "title": "Section 1",
-    "section": "Pretty Code",
-    "text": "Pretty Code\n\nOver 20 syntax highlighting themes available\nDefault theme optimized for accessibility\n\n# Define a server for the Shiny app\nfunction(input, output) {\n  \n  # Fill in the spot we created for a plot\n  output$phonePlot &lt;- renderPlot({\n    # Render a barplot\n  })\n}\n\nLearn more: Syntax Highlighting"
-  },
-  {
-    "objectID": "general_eda.html#code-animations",
-    "href": "general_eda.html#code-animations",
-    "title": "Section 1",
-    "section": "Code Animations",
-    "text": "Code Animations\n\nOver 20 syntax highlighting themes available\nDefault theme optimized for accessibility\n\n# Define a server for the Shiny app\nfunction(input, output) {\n  \n  # Fill in the spot we created for a plot\n  output$phonePlot &lt;- renderPlot({\n    # Render a barplot\n    barplot(WorldPhones[,input$region]*1000, \n            main=input$region,\n            ylab=\"Number of Telephones\",\n            xlab=\"Year\")\n  })\n}\n\nLearn more: Code Animations"
-  },
-  {
-    "objectID": "general_eda.html#line-highlighting",
-    "href": "general_eda.html#line-highlighting",
-    "title": "Section 1",
-    "section": "Line Highlighting",
-    "text": "Line Highlighting\n\nHighlight specific lines for emphasis\nIncrementally highlight additional lines\n\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(subplot_kw={'projection': 'polar'})\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n\nLearn more: Line Highlighting"
-  },
-  {
-    "objectID": "general_eda.html#executable-code",
-    "href": "general_eda.html#executable-code",
-    "title": "Section 1",
-    "section": "Executable Code",
-    "text": "Executable Code\n\nlibrary(ggplot2)\nggplot(mtcars, aes(hp, mpg, color = am)) +\n  geom_point() +\n  geom_smooth(formula = y ~ x, method = \"loess\")\n\n\n\nLearn more: Executable Code"
-  },
-  {
-    "objectID": "general_eda.html#latex-equations",
-    "href": "general_eda.html#latex-equations",
-    "title": "Section 1",
-    "section": "LaTeX Equations",
-    "text": "LaTeX Equations\nMathJax rendering of equations to HTML\n\n\n\\begin{gather*}\na_1=b_1+c_1\\\\\na_2=b_2+c_2-d_2+e_2\n\\end{gather*}\n\n\\begin{align}\na_{11}& =b_{11}&\n  a_{12}& =b_{12}\\\\\na_{21}& =b_{21}&\n  a_{22}& =b_{22}+c_{22}\n\\end{align}\n\n\\[\\begin{gather*}\na_1=b_1+c_1\\\\\na_2=b_2+c_2-d_2+e_2\n\\end{gather*}\\]\n\\[\\begin{align}\na_{11}& =b_{11}&\n  a_{12}& =b_{12}\\\\\na_{21}& =b_{21}&\n  a_{22}& =b_{22}+c_{22}\n\\end{align}\\]\n\n\nLearn more: LaTeX Equations"
-  },
-  {
-    "objectID": "general_eda.html#column-layout",
-    "href": "general_eda.html#column-layout",
-    "title": "Section 1",
-    "section": "Column Layout",
-    "text": "Column Layout\nArrange content into columns of varying widths:\n\n\nMotor Trend Car Road Tests\nThe data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles.\n\n\n\n\n\n\n\n\n\nmpg\ncyl\ndisp\nhp\nwt\n\n\n\n\nMazda RX4\n21.0\n6\n160\n110\n2.620\n\n\nMazda RX4 Wag\n21.0\n6\n160\n110\n2.875\n\n\nDatsun 710\n22.8\n4\n108\n93\n2.320\n\n\nHornet 4 Drive\n21.4\n6\n258\n110\n3.215\n\n\nHornet Sportabout\n18.7\n8\n360\n175\n3.440\n\n\nValiant\n18.1\n6\n225\n105\n3.460\n\n\n\n\n\n\n\nLearn more: Multiple Columns"
-  },
-  {
-    "objectID": "general_eda.html#incremental-lists",
-    "href": "general_eda.html#incremental-lists",
-    "title": "Section 1",
-    "section": "Incremental Lists",
-    "text": "Incremental Lists\nLists can optionally be displayed incrementally:\n\n\nFirst item\nSecond item\nThird item\n\n\n\n Insert pauses to make other types of content display incrementally.\n\nLearn more: Incremental Lists"
-  },
-  {
-    "objectID": "general_eda.html#fragments",
-    "href": "general_eda.html#fragments",
-    "title": "Section 1",
-    "section": "Fragments",
-    "text": "Fragments\nIncremental text display and animation with fragments:\n\n\nFade in\n\n\nSlide up while fading in\n\n\nSlide left while fading in\n\n\nFade in then semi out\n\n\n\nStrike\n\n\nHighlight red\n\n\nLearn more: Fragments"
-  },
-  {
-    "objectID": "general_eda.html#slide-backgrounds",
-    "href": "general_eda.html#slide-backgrounds",
-    "title": "Section 1",
-    "section": "Slide Backgrounds",
-    "text": "Slide Backgrounds\nSet the background attribute on a slide to change the background color (all CSS color formats are supported).\nDifferent background transitions are available via the background-transition option.\n\nLearn more: Slide Backgrounds"
-  },
-  {
-    "objectID": "general_eda.html#media-backgrounds",
-    "href": "general_eda.html#media-backgrounds",
-    "title": "Section 1",
-    "section": "Media Backgrounds",
-    "text": "Media Backgrounds\nYou can also use the following as a slide background:\n\nAn image: background-image\nA video: background-video\nAn iframe: background-iframe\n\n\nLearn more: Media Backgrounds"
-  },
-  {
-    "objectID": "general_eda.html#absolute-position",
-    "href": "general_eda.html#absolute-position",
-    "title": "Section 1",
-    "section": "Absolute Position",
-    "text": "Absolute Position\nPosition images or other elements at precise locations\n\n\n\n\nLearn more: Absolute Position"
-  },
-  {
-    "objectID": "general_eda.html#auto-animate",
-    "href": "general_eda.html#auto-animate",
-    "title": "Section 1",
-    "section": "Auto-Animate",
-    "text": "Auto-Animate\nAutomatically animate matching elements across slides with Auto-Animate.\n\n\n\n\n\n\n\n\n\n\n\n\nLearn more: Auto-Animate"
-  },
-  {
-    "objectID": "general_eda.html#auto-animate-1",
-    "href": "general_eda.html#auto-animate-1",
-    "title": "Section 1",
-    "section": "Auto-Animate",
-    "text": "Auto-Animate\nAutomatically animate matching elements across slides with Auto-Animate.\n\n\n\n\n\n\n\n\n\n\n\n\nLearn more: Auto-Animate"
-  },
-  {
-    "objectID": "general_eda.html#slide-transitions",
-    "href": "general_eda.html#slide-transitions",
-    "title": "Section 1",
-    "section": "Slide Transitions",
-    "text": "Slide Transitions\nThe next few slides will transition using the slide transition\n\n\n\n\n\n\n\nTransition\nDescription\n\n\n\n\nnone\nNo transition (default, switch instantly)\n\n\nfade\nCross fade\n\n\nslide\nSlide horizontally\n\n\nconvex\nSlide at a convex angle\n\n\nconcave\nSlide at a concave angle\n\n\nzoom\nScale the incoming slide so it grows in from the center of the screen.\n\n\n\n\nLearn more: Slide Transitions"
-  },
-  {
-    "objectID": "general_eda.html#tabsets",
-    "href": "general_eda.html#tabsets",
-    "title": "Section 1",
-    "section": "Tabsets",
-    "text": "Tabsets\n\nPlotData\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nmpg\ncyl\ndisp\nhp\ndrat\nwt\nqsec\nvs\nam\ngear\ncarb\n\n\n\n\nMazda RX4\n21.0\n6\n160.0\n110\n3.90\n2.620\n16.46\n0\n1\n4\n4\n\n\nMazda RX4 Wag\n21.0\n6\n160.0\n110\n3.90\n2.875\n17.02\n0\n1\n4\n4\n\n\nDatsun 710\n22.8\n4\n108.0\n93\n3.85\n2.320\n18.61\n1\n1\n4\n1\n\n\nHornet 4 Drive\n21.4\n6\n258.0\n110\n3.08\n3.215\n19.44\n1\n0\n3\n1\n\n\nHornet Sportabout\n18.7\n8\n360.0\n175\n3.15\n3.440\n17.02\n0\n0\n3\n2\n\n\nValiant\n18.1\n6\n225.0\n105\n2.76\n3.460\n20.22\n1\n0\n3\n1\n\n\nDuster 360\n14.3\n8\n360.0\n245\n3.21\n3.570\n15.84\n0\n0\n3\n4\n\n\nMerc 240D\n24.4\n4\n146.7\n62\n3.69\n3.190\n20.00\n1\n0\n4\n2\n\n\nMerc 230\n22.8\n4\n140.8\n95\n3.92\n3.150\n22.90\n1\n0\n4\n2\n\n\nMerc 280\n19.2\n6\n167.6\n123\n3.92\n3.440\n18.30\n1\n0\n4\n4\n\n\nMerc 280C\n17.8\n6\n167.6\n123\n3.92\n3.440\n18.90\n1\n0\n4\n4\n\n\nMerc 450SE\n16.4\n8\n275.8\n180\n3.07\n4.070\n17.40\n0\n0\n3\n3\n\n\nMerc 450SL\n17.3\n8\n275.8\n180\n3.07\n3.730\n17.60\n0\n0\n3\n3\n\n\nMerc 450SLC\n15.2\n8\n275.8\n180\n3.07\n3.780\n18.00\n0\n0\n3\n3\n\n\nCadillac Fleetwood\n10.4\n8\n472.0\n205\n2.93\n5.250\n17.98\n0\n0\n3\n4\n\n\nLincoln Continental\n10.4\n8\n460.0\n215\n3.00\n5.424\n17.82\n0\n0\n3\n4\n\n\nChrysler Imperial\n14.7\n8\n440.0\n230\n3.23\n5.345\n17.42\n0\n0\n3\n4\n\n\nFiat 128\n32.4\n4\n78.7\n66\n4.08\n2.200\n19.47\n1\n1\n4\n1\n\n\nHonda Civic\n30.4\n4\n75.7\n52\n4.93\n1.615\n18.52\n1\n1\n4\n2\n\n\nToyota Corolla\n33.9\n4\n71.1\n65\n4.22\n1.835\n19.90\n1\n1\n4\n1\n\n\nToyota Corona\n21.5\n4\n120.1\n97\n3.70\n2.465\n20.01\n1\n0\n3\n1\n\n\nDodge Challenger\n15.5\n8\n318.0\n150\n2.76\n3.520\n16.87\n0\n0\n3\n2\n\n\nAMC Javelin\n15.2\n8\n304.0\n150\n3.15\n3.435\n17.30\n0\n0\n3\n2\n\n\nCamaro Z28\n13.3\n8\n350.0\n245\n3.73\n3.840\n15.41\n0\n0\n3\n4\n\n\nPontiac Firebird\n19.2\n8\n400.0\n175\n3.08\n3.845\n17.05\n0\n0\n3\n2\n\n\nFiat X1-9\n27.3\n4\n79.0\n66\n4.08\n1.935\n18.90\n1\n1\n4\n1\n\n\nPorsche 914-2\n26.0\n4\n120.3\n91\n4.43\n2.140\n16.70\n0\n1\n5\n2\n\n\nLotus Europa\n30.4\n4\n95.1\n113\n3.77\n1.513\n16.90\n1\n1\n5\n2\n\n\nFord Pantera L\n15.8\n8\n351.0\n264\n4.22\n3.170\n14.50\n0\n1\n5\n4\n\n\nFerrari Dino\n19.7\n6\n145.0\n175\n3.62\n2.770\n15.50\n0\n1\n5\n6\n\n\nMaserati Bora\n15.0\n8\n301.0\n335\n3.54\n3.570\n14.60\n0\n1\n5\n8\n\n\nVolvo 142E\n21.4\n4\n121.0\n109\n4.11\n2.780\n18.60\n1\n1\n4\n2\n\n\n\n\n\n\n\n\n\nLearn more: Jupyter widgets, htmlwidgets"
-  },
-  {
-    "objectID": "general_eda.html#interactive-slides",
-    "href": "general_eda.html#interactive-slides",
-    "title": "Section 1",
-    "section": "Interactive Slides",
-    "text": "Interactive Slides\nTurn presentations into applications with Observable and Shiny. Use component layout to position inputs and outputs.\n\n\nviewof talentWeight = Inputs.range([-2, 2], { value: 0.7, step: 0.01, label: \"talent weight\" })\nviewof looksWeight = Inputs.range([-2, 2], { value: 0.7, step: 0.01, label: \"looks weight\" })\nviewof minimum = Inputs.range([-2, 2], { value: 1, step: 0.01, label: \"min fame\" })\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nimport { plotActors } from './actors.js';\nplotActors(actors, talentWeight, looksWeight, minimum)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLearn more: Observable, Shiny, Component Layout"
-  },
-  {
-    "objectID": "general_eda.html#preview-links",
-    "href": "general_eda.html#preview-links",
-    "title": "Section 1",
-    "section": "Preview Links",
-    "text": "Preview Links\nNavigate to hyperlinks without disrupting the flow of your presentation.\nUse the preview-links option to open links in an iframe on top of your slides. Try clicking the link below for a demonstration:\n\nMatplotlib: Visualization with Python\n\n\nLearn more: Preview Links"
-  },
-  {
-    "objectID": "general_eda.html#themes",
-    "href": "general_eda.html#themes",
-    "title": "Section 1",
-    "section": "Themes",
-    "text": "Themes\n10 Built-in Themes (or create your own)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLearn more: Themes"
-  },
-  {
-    "objectID": "general_eda.html#easy-navigation",
-    "href": "general_eda.html#easy-navigation",
-    "title": "Section 1",
-    "section": "Easy Navigation",
-    "text": "Easy Navigation\n\nQuickly jump to other parts of your presentation\n\n\n\n\n\n\n\n\n\n\nToggle the slide menu with the menu button (bottom left of slide) to go to other slides and access presentation tools.\n\n\n\nYou can also press m to toggle the menu open and closed.\n\nLearn more: Navigation"
-  },
-  {
-    "objectID": "general_eda.html#chalkboard",
-    "href": "general_eda.html#chalkboard",
-    "title": "Section 1",
-    "section": "Chalkboard",
-    "text": "Chalkboard\n\nFree form drawing and slide annotations\n\n\n\n\n\n\n\n\n\n\nUse the chalkboard button at the bottom left of the slide to toggle the chalkboard.\n\n\n\n\n\n\n\n\n\n\n\n\nUse the notes canvas button at the bottom left of the slide to toggle drawing on top of the current slide.\n\n\n\nYou can also press b to toggle the chalkboard or c to toggle the notes canvas.\n\nLearn more: Chalkboard"
-  },
-  {
-    "objectID": "general_eda.html#point-of-view",
-    "href": "general_eda.html#point-of-view",
-    "title": "Section 1",
-    "section": "Point of View",
-    "text": "Point of View\nPress o to toggle overview mode:\n\nHold down the Alt key (or Ctrl in Linux) and click on any element to zoom towards it—try it now on this slide.\n\nLearn more: Overview Mode, Slide Zoom"
-  },
-  {
-    "objectID": "general_eda.html#speaker-view",
-    "href": "general_eda.html#speaker-view",
-    "title": "Section 1",
-    "section": "Speaker View",
-    "text": "Speaker View\nPress s (or use the presentation menu) to open speaker view\n\n\nLearn more: Speaker View"
-  },
-  {
-    "objectID": "general_eda.html#authoring-tools",
-    "href": "general_eda.html#authoring-tools",
-    "title": "Section 1",
-    "section": "Authoring Tools",
-    "text": "Authoring Tools\nLive side-by-side preview for any notebook or text editor including Jupyter and VS Code\n\n\n\n\n\n\n\nLearn more: Jupyter, VS Code, Text Editors"
-  },
-  {
-    "objectID": "general_eda.html#authoring-tools-1",
-    "href": "general_eda.html#authoring-tools-1",
-    "title": "Section 1",
-    "section": "Authoring Tools",
-    "text": "Authoring Tools\nRStudio includes an integrated presentation preview pane\n\n\nLearn more: RStudio"
-  },
-  {
-    "objectID": "general_eda.html#and-more",
-    "href": "general_eda.html#and-more",
-    "title": "Section 1",
-    "section": "And More…",
-    "text": "And More…\n\nTouch optimized (presentations look great on mobile, swipe to navigate slides)\nFooter & Logo (optionally specify custom footer per-slide)\nAuto-Slide (step through slides automatically, without any user input)\nMultiplex (allows your audience to follow the slides of the presentation you are controlling on their own phone, tablet or laptop).\n\n\nLearn more: Quarto Presentations"
+    "section": "Shout it Out!",
+    "text": "Shout it Out!"
   },
   {
     "objectID": "general_eda.html#about-spotify",
     "href": "general_eda.html#about-spotify",
-    "title": "Section 1",
+    "title": "Exploratory Data Analysis",
     "section": "About Spotify",
     "text": "About Spotify\n\n\n626 million active users globally.\nOver 100 million songs in the Spotify library.\nDetailed metadata for each song, including artist, album, release date, Beats per minute, danceability, valence, energy, liveness etc\nIn our current project, we will explore the 2023 Spotify Dataset.\nThis dataset contains 953 rows and 16 columns."
   },
   {
-    "objectID": "general_eda.html#take-a-look-at-the-dataset",
-    "href": "general_eda.html#take-a-look-at-the-dataset",
-    "title": "Section 1",
-    "section": "Take a look at the dataset",
-    "text": "Take a look at the dataset\n\n\n\n\n\n\nLet’s explore each column one by one.{.larger}"
-  },
-  {
     "objectID": "general_eda.html#dataset",
     "href": "general_eda.html#dataset",
-    "title": "Section 1",
+    "title": "Exploratory Data Analysis",
     "section": "Dataset",
     "text": "Dataset\n\n\n\n\n\n\n\nLet’s understand the column one-by-one."
   },
   {
     "objectID": "general_eda.html#column-explanation",
     "href": "general_eda.html#column-explanation",
-    "title": "Section 1",
+    "title": "Exploratory Data Analysis",
     "section": "Column Explanation",
     "text": "Column Explanation\n\ntrack_name: Name of the song\n\n\nartist(s)_name: Name of the artist(s) of the song\n\n\nartist_count: Number of artists contributing to the song\n\n\nreleased_year: Year when the song was released\n\n\nreleased_month: Month when the song was released\n\n\nreleased_day: Day of the month when the song was released\n\n\nstreams: Total number of streams on Spotify\n\n\nbpm: Beats per minute, a measure of song tempo\n\n\nmode: Mode of the song (major or minor)"
   },
   {
     "objectID": "general_eda.html#column-explanation-cont.",
     "href": "general_eda.html#column-explanation-cont.",
-    "title": "Section 1",
+    "title": "Exploratory Data Analysis",
     "section": "Column Explanation (cont.)",
     "text": "Column Explanation (cont.)\n\ndanceability_%: Percentage indicating how suitable the song is for dancing\n\n\nvalence_%: Positivity of the song’s musical content\n\n\nenergy_%: Perceived energy level of the song\n\n\nacousticness_%: Amount of acoustic sound in the song\n\n\ninstrumentalness_%: Amount of instrumental content in the song\n\n\nliveness_%: Presence of live performance elements\n\n\nspeechiness_%: Amount of spoken words in the song"
   },
   {
-    "objectID": "general_eda.html#comment-test",
-    "href": "general_eda.html#comment-test",
-    "title": "Section 1",
-    "section": "Comment test",
-    "text": "Comment test\n\n{{&lt; utterances-comments  &gt;}}"
-  },
-  {
     "objectID": "general_eda.html#comment-one",
     "href": "general_eda.html#comment-one",
-    "title": "Section 1",
+    "title": "Exploratory Data Analysis",
     "section": "Comment one",
     "text": "Comment one\nfix comment for utteranc\nGiven this dataset, what are some questions that Spotify might ask to understand its users / improve its platform?\n\n\n\n\n\n\n\n{{&lt; utterances-comments  &gt;}}"
   },
   {
     "objectID": "general_eda.html#questions-that-spotify-might-be-interested-in",
     "href": "general_eda.html#questions-that-spotify-might-be-interested-in",
-    "title": "Section 1",
+    "title": "Exploratory Data Analysis",
     "section": "Questions that Spotify might be interested in",
     "text": "Questions that Spotify might be interested in\n\n\nWhat are the top 5 songs in 2023?\nWhat are the characteristics of the top 5 songs?\nWhat are the months and days that most songs are produced?\nWhat are the distributions of the audio features?\nWhat are the relationship between audio features?\nWhat are the different characteristics between the most and least-stream songs?"
   },
   {
-    "objectID": "general_eda.html#it-is-hard-to-answer-those-questions-by-just-looking-at-it",
-    "href": "general_eda.html#it-is-hard-to-answer-those-questions-by-just-looking-at-it",
-    "title": "Section 1",
-    "section": "IT IS HARD TO ANSWER THOSE QUESTIONS BY JUST LOOKING AT IT",
-    "text": "IT IS HARD TO ANSWER THOSE QUESTIONS BY JUST LOOKING AT IT\n\nTherefore, we visualize the data to extract useful insights."
-  },
-  {
     "objectID": "general_eda.html#ai-data",
     "href": "general_eda.html#ai-data",
-    "title": "Section 1",
+    "title": "Exploratory Data Analysis",
     "section": "AI & Data",
     "text": "AI & Data\n\n\nfix the command\n\n\n\n\n\nflowchart LR\n  Data (Round edge) --&gt; AI (Round edge)\n\n\n\n\n\n\n\n\nFurthermore, AI relies on data. Understanding the data before feeding an algorithm is important."
   },
   {
     "objectID": "general_eda.html#exploratory-data-analysis",
     "href": "general_eda.html#exploratory-data-analysis",
-    "title": "Section 1",
+    "title": "Exploratory Data Analysis",
     "section": "Exploratory Data Analysis",
     "text": "Exploratory Data Analysis\n\nExploratory Data Analysis (EDA) is the process of analyzing data sets to summarize their main characteristics, often using visual methods.\n\n\nIt’s a critical step in the data analysis workflow, providing insights into the structure, patterns, and relationships within the data."
   },
   {
     "objectID": "general_eda.html#exploratory-data-analysis-1",
     "href": "general_eda.html#exploratory-data-analysis-1",
-    "title": "Section 1",
+    "title": "Exploratory Data Analysis",
     "section": "Exploratory Data Analysis",
     "text": "Exploratory Data Analysis\n\n\nEDA helps you to understand the nuances in your data\nEDA helps ensure the quality and reliability of your data\nEDA is the foundation for complex analyses as it helps with features selection, hypothesis generation, and determining the research direction."
   },
   {
     "objectID": "general_eda.html#agenda",
     "href": "general_eda.html#agenda",
-    "title": "Section 1",
+    "title": "Exploratory Data Analysis",
     "section": "Agenda",
     "text": "Agenda\n\n\nTable Analysis\nDiscrete Data Analysis\nContinuous Data Analysis\nTrend Analysis\nRelationship Analysis"
   },
   {
     "objectID": "general_eda.html#what-are-the-top-5-songs-based-on-stream-in-2023",
     "href": "general_eda.html#what-are-the-top-5-songs-based-on-stream-in-2023",
-    "title": "Section 1",
+    "title": "Exploratory Data Analysis",
     "section": "What are the top 5 songs based on stream in 2023?",
     "text": "What are the top 5 songs based on stream in 2023?"
   },
   {
     "objectID": "general_eda.html#what-are-the-top-5-songs-based-on-danceability-in-2023",
     "href": "general_eda.html#what-are-the-top-5-songs-based-on-danceability-in-2023",
-    "title": "Section 1",
+    "title": "Exploratory Data Analysis",
     "section": "What are the top 5 songs based on danceability in 2023?",
     "text": "What are the top 5 songs based on danceability in 2023?"
   },
   {
     "objectID": "general_eda.html#what-are-the-bottom-5-songs-based-on-energy-in-2023",
     "href": "general_eda.html#what-are-the-bottom-5-songs-based-on-energy-in-2023",
-    "title": "Section 1",
+    "title": "Exploratory Data Analysis",
     "section": "What are the bottom 5 songs based on energy in 2023?",
     "text": "What are the bottom 5 songs based on energy in 2023?"
   },
   {
     "objectID": "general_eda.html#discrete-feature",
     "href": "general_eda.html#discrete-feature",
-    "title": "Section 1",
+    "title": "Exploratory Data Analysis",
     "section": "Discrete Feature",
     "text": "Discrete Feature\n\nFeatures that can only take in a specific set of values, often counted in whole number. For example,\n\n\n\nCoin flips: 0 or 1\nDays of the Week: Monday, Tuesday, Wednesday etc\nClass Grades: Students can receive specific grades like A, B, C, D, or F."
   },
   {
     "objectID": "general_eda.html#bar-plot",
     "href": "general_eda.html#bar-plot",
-    "title": "Section 1",
+    "title": "Exploratory Data Analysis",
     "section": "Bar Plot",
     "text": "Bar Plot\n\nA bar plot is a chart that uses bars to represent the frequency or count of different categories of a discrete variable.\n\n\nBar plots are ideal for discrete variables because they clearly show the count or frequency of each category, making it easy to compare them."
   },
   {
     "objectID": "general_eda.html#visualize",
     "href": "general_eda.html#visualize",
-    "title": "Section 1",
+    "title": "Exploratory Data Analysis",
     "section": "Visualize",
     "text": "Visualize\n\n\n\n\n\n\nSelect a categorical column to visualize:\n\ndata = FileAttachment(\"spotify2023.csv\").csv({ typed: true })\ncat_columns = ['released_month', 'released_day','mode']\nviewof selected_column_cat = Inputs.radio(cat_columns, {value: cat_columns[0]})\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ngrouped_data = d3.groups(data, d =&gt; d[selected_column_cat]).map(([key, values]) =&gt; ({key, count: values.length}));\n\nPlot.plot({\n  marks: [\n    Plot.barY(grouped_data, {x: \"key\", y: \"count\", fill: \"steelblue\"}),\n    Plot.text(grouped_data, {x: \"key\", y: \"count\", text: d =&gt; d.count, dy: -10})\n  ],\n  x: {\n    label: selected_column_cat\n  },\n  y: {\n    label: \"Count\"\n  },\n  color: {\n    legend: false\n  }\n})"
+  },
+  {
+    "objectID": "general_eda.html#comment-two",
+    "href": "general_eda.html#comment-two",
+    "title": "Exploratory Data Analysis",
+    "section": "Comment two",
+    "text": "Comment two\nfix comment for utteranc\n\n{{&lt; utterances-comments  &gt;}}"
+  },
+  {
+    "objectID": "general_eda.html#continuous-feature",
+    "href": "general_eda.html#continuous-feature",
+    "title": "Exploratory Data Analysis",
+    "section": "Continuous Feature",
+    "text": "Continuous Feature\n\nFeatures that can take any value within a given range, often measured and including fractions or decimals.\n\n\n\nHeight: A person’s height can be any value within a range (e.g., 150.5 cm, 170.2 cm).\nTemperature: Temperature can vary continuously (e.g., 22.3°C, 35.6°C).\nWeight: Weight can take on any value within a range (e.g., 55.5 kg, 72.8 kg)."
+  },
+  {
+    "objectID": "general_eda.html#histogram",
+    "href": "general_eda.html#histogram",
+    "title": "Exploratory Data Analysis",
+    "section": "Histogram",
+    "text": "Histogram\n\nA histogram is a chart that uses bars to represent the distribution of a continuous variable, showing the frequency of data within certain ranges or bins.\n\n\nHistogram makes it easier to identify patterns, such as skewness, central tendency, and the presence of outliers."
+  },
+  {
+    "objectID": "general_eda.html#visualize-1",
+    "href": "general_eda.html#visualize-1",
+    "title": "Exploratory Data Analysis",
+    "section": "Visualize",
+    "text": "Visualize\n\n\n\n\n\n\nSelect a continuous column to visualize:\n\ncont_columns = ['streams', 'bpm', 'danceability_%', 'valence_%', 'energy_%', 'acousticness_%',\n       'instrumentalness_%', 'liveness_%', 'speechiness_%']\nviewof selected_column = Inputs.radio(cont_columns, {value: 'danceability_%'})\nviewof bin_count = Inputs.range([1, 50], {step: 1, value: 15, label: \"Number of Bins\"})\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPlot.plot({\n  marks: [\n    Plot.rectY(data, Plot.binX({y: \"count\"}, {x: selected_column, fill: \"steelblue\", thresholds: bin_count}))\n  ],\n  x: {\n    label: selected_column\n  },\n  y: {\n    label: \"Count\"\n  },\n  color: {\n    legend: false\n  }\n})"
+  },
+  {
+    "objectID": "general_eda.html#what-happened-when-you-increasedecrease-the-number-of-bins",
+    "href": "general_eda.html#what-happened-when-you-increasedecrease-the-number-of-bins",
+    "title": "Exploratory Data Analysis",
+    "section": "What happened when you increase/decrease the number of bins?",
+    "text": "What happened when you increase/decrease the number of bins?\nfix comment for utteranc\n\n{{&lt; utterances-comments  &gt;}}"
+  },
+  {
+    "objectID": "general_eda.html#what-did-you-observe-from-the-barplot-itself",
+    "href": "general_eda.html#what-did-you-observe-from-the-barplot-itself",
+    "title": "Exploratory Data Analysis",
+    "section": "What did you observe from the barplot itself",
+    "text": "What did you observe from the barplot itself\nfix comment for utteranc\n\n{{&lt; utterances-comments  &gt;}}"
+  },
+  {
+    "objectID": "general_eda.html#about-trend-analysis",
+    "href": "general_eda.html#about-trend-analysis",
+    "title": "Exploratory Data Analysis",
+    "section": "About Trend Analysis",
+    "text": "About Trend Analysis\n\nTrend analysis is the process of examining data over time to identify patterns, trends, and insights."
+  },
+  {
+    "objectID": "general_eda.html#why-is-trend-analysis-important-for-spotify",
+    "href": "general_eda.html#why-is-trend-analysis-important-for-spotify",
+    "title": "Exploratory Data Analysis",
+    "section": "Why is trend analysis important for Spotify?",
+    "text": "Why is trend analysis important for Spotify?\nfix comment for utteranc\n\n{{&lt; utterances-comments  &gt;}}"
+  },
+  {
+    "objectID": "general_eda.html#understanding-trends-for-spotify",
+    "href": "general_eda.html#understanding-trends-for-spotify",
+    "title": "Exploratory Data Analysis",
+    "section": "Understanding Trends for Spotify",
+    "text": "Understanding Trends for Spotify\n\n\nUnderstanding Audience Preferences: Analyzing music feature trends over time helps identify shifts in listener preferences, enabling better music recommendations and targeted marketing strategies.\nPredicting Hits: By recognizing trends in features like danceability or energy, Spotify can anticipate which songs might become popular, aiding in playlist curation and promotional efforts.\nAdapting to Industry Changes: Monitoring trends allows Spotify to stay aligned with evolving music genres and production styles, ensuring its catalog remains relevant and appealing to users."
+  },
+  {
+    "objectID": "general_eda.html#visualize-2",
+    "href": "general_eda.html#visualize-2",
+    "title": "Exploratory Data Analysis",
+    "section": "Visualize",
+    "text": "Visualize\n\n\n\n\n\n\nSelect a continuous column to visualize:\n\naudio_features = ['danceability_%', 'valence_%', 'energy_%', 'acousticness_%',\n                  'instrumentalness_%', 'liveness_%', 'speechiness_%']\nviewof selected_column_trend = Inputs.radio(audio_features, {value: 'danceability_%'})\n\n// Group the data by 'released_year' and calculate the mean of the audio features\ntrends = Array.from(\n  d3.group(data, d =&gt; d.released_year),\n  ([released_year, group]) =&gt; ({\n    released_year,\n    ...Object.fromEntries(audio_features.map(feature =&gt; [\n      feature,\n      d3.mean(group, d =&gt; d[feature])\n    ]))\n  })\n)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nsorted_trends = trends.sort((a, b) =&gt; a.released_year - b.released_year)\n\n// Create the line plot with the sorted data\nPlot.line(sorted_trends, {x: 'released_year', y: selected_column_trend}).plot()"
+  },
+  {
+    "objectID": "general_eda.html#what-did-you-observe-from-the-trend-analysis",
+    "href": "general_eda.html#what-did-you-observe-from-the-trend-analysis",
+    "title": "Exploratory Data Analysis",
+    "section": "What did you observe from the trend analysis?",
+    "text": "What did you observe from the trend analysis?\nfix comment for utteranc\n\n{{&lt; utterances-comments  &gt;}}"
+  },
+  {
+    "objectID": "general_eda.html#scatterplot",
+    "href": "general_eda.html#scatterplot",
+    "title": "Exploratory Data Analysis",
+    "section": "Scatterplot",
+    "text": "Scatterplot\n\n\nA scatterplot is a type of data visualization that displays individual data points on a two-dimensional graph.\nEach point on the scatterplot represents an observation from a dataset, with its position determined by two variables—one plotted on the x-axis and the other on the y-axis.\nScatterplots are commonly used to explore the relationship between two continuous variables to reveal patterns, trends, correlations, or clusters within the data."
+  },
+  {
+    "objectID": "general_eda.html#linear-regression",
+    "href": "general_eda.html#linear-regression",
+    "title": "Exploratory Data Analysis",
+    "section": "Linear Regression",
+    "text": "Linear Regression\n\n\nLinear regression is a statistical method used to model and analyze the relationship between two variables by fitting a linear equation to the observed data."
+  },
+  {
+    "objectID": "general_eda.html#linear-regression-1",
+    "href": "general_eda.html#linear-regression-1",
+    "title": "Exploratory Data Analysis",
+    "section": "Linear Regression",
+    "text": "Linear Regression\n\n\nThe linear equation is typically of the form: \\(y = mx + c\\), where:\n\n\n\n\n\\(y\\) is the dependent variable (the outcome we are trying to predict or explain),\n\n\n\n\n\\(x\\) is the independent variable (the predictor or input variable),\n\n\n\n\n\\(m\\) is the slope of the line (indicating the change in \\(y\\) for a unit change in $ x$).\n\n\n\n\n\\(c\\) is the y-intercept (the value of $ y $ when $ x$ is 0)."
+  },
+  {
+    "objectID": "general_eda.html#linear-regression-2",
+    "href": "general_eda.html#linear-regression-2",
+    "title": "Exploratory Data Analysis",
+    "section": "Linear Regression",
+    "text": "Linear Regression\n\nLinear regression helps quantify the strength and direction (positive or negative) of the relationship between the variables."
+  },
+  {
+    "objectID": "general_eda.html#visualization",
+    "href": "general_eda.html#visualization",
+    "title": "Exploratory Data Analysis",
+    "section": "Visualization",
+    "text": "Visualization\n\n\n\n\n\n\n\n\nSelect a \\(x\\) column to visualize:\n\nbivariate_cont_columns = ['danceability_%', 'valence_%', 'energy_%', 'acousticness_%',\n                  'instrumentalness_%', 'liveness_%', 'speechiness_%', 'streams']\n\n// Create the radio inputs for selecting X and Y axis columns\nviewof x_column = Inputs.radio(bivariate_cont_columns, {value: 'danceability_%'})\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSelect a \\(y\\) column to visualize:\n\nviewof y_column = Inputs.radio(bivariate_cont_columns, {value: 'streams'})\n\n\n\n\n\n\n\n\n\n\n\n// Create the scatterplot with a linear regression line\nPlot.plot({\n  marks: [\n    Plot.dot(data, {x: x_column, y: y_column, fill: \"#1E2F97\", fillOpacity: 0.5}),\n    Plot.linearRegressionY(data, {x: x_column, y: y_column, stroke: \"red\"})\n  ]\n})"
+  },
+  {
+    "objectID": "general_eda.html#correlation",
+    "href": "general_eda.html#correlation",
+    "title": "Exploratory Data Analysis",
+    "section": "Correlation",
+    "text": "Correlation\n\n\nCorrelation measures how two things are related to each other, like how one changes when the other does.\nPositive correlation means as one thing increases, the other also increases (e.g., more study time, better grades).\nNegative correlation means as one thing increases, the other decreases (e.g., more exercise, lower stress)."
+  },
+  {
+    "objectID": "general_eda.html#correlation-heatmap",
+    "href": "general_eda.html#correlation-heatmap",
+    "title": "Exploratory Data Analysis",
+    "section": "Correlation Heatmap",
+    "text": "Correlation Heatmap\n\n\n\n\n\n\nSelect Continuous Variables for Correlation Heatmap:\n\nviewof selected_bivariate_cont_columns = Inputs.checkbox(bivariate_cont_columns, {value: bivariate_cont_columns})\n\n\n\n\n\n\n\n\n\n\nfunction calculateCorrelationMatrix(data, selectedColumns) {\n  const n = selectedColumns.length;\n  const correlationMatrix = Array.from({ length: n }, () =&gt; Array(n).fill(0));\n\n  function pearsonCorrelation(x, y) {\n    const meanX = d3.mean(x);\n    const meanY = d3.mean(y);\n    const diffX = x.map(d =&gt; d - meanX);\n    const diffY = y.map(d =&gt; d - meanY);\n    const numerator = d3.sum(diffX.map((d, i) =&gt; d * diffY[i]));\n    const denominator = Math.sqrt(d3.sum(diffX.map(d =&gt; d * d)) * d3.sum(diffY.map(d =&gt; d * d)));\n    return numerator / denominator;\n  }\n\n  for (let i = 0; i &lt; n; i++) {\n    for (let j = 0; j &lt; n; j++) {\n      const col1 = selectedColumns[i];\n      const col2 = selectedColumns[j];\n      const values1 = data.map(d =&gt; d[col1]);\n      const values2 = data.map(d =&gt; d[col2]);\n      const correlation = pearsonCorrelation(values1, values2);\n      correlationMatrix[i][j] = correlation;\n    }\n  }\n\n  return correlationMatrix;\n}\n\ncorrelation_matrix = calculateCorrelationMatrix(data, selected_bivariate_cont_columns);\ncorrelation_data = selected_bivariate_cont_columns.flatMap((col1, i) =&gt;\n  selected_bivariate_cont_columns.map((col2, j) =&gt; ({\n    x: col1,\n    y: col2,\n    value: correlation_matrix[i][j]\n  }))\n);\n\nPlot.plot({\n  marks: [\n    Plot.cell(correlation_data, {x: \"x\", y: \"y\", fill: \"value\", title: d =&gt; d.value.toFixed(2)}),\n    Plot.text(correlation_data, {x: \"x\", y: \"y\", text: d =&gt; d.value.toFixed(2), dy: 0, textAnchor: \"middle\"})\n  ],\n  x: {\n    domain: selected_bivariate_cont_columns,\n    label: \"Variables\"\n  },\n  y: {\n    domain: selected_bivariate_cont_columns,\n    label: \"Variables\"\n  },\n  color: {\n    type: \"linear\",\n    scheme: \"blues\",\n    label: \"Correlation\"\n  },\n  width: 600,\n  height: 600\n})"
+  },
+  {
+    "objectID": "general_eda.html#what-did-you-observe",
+    "href": "general_eda.html#what-did-you-observe",
+    "title": "Exploratory Data Analysis",
+    "section": "What did you observe?",
+    "text": "What did you observe?\nfix comment for utteranc\n\n{{&lt; utterances-comments  &gt;}}"
+  },
+  {
+    "objectID": "general_eda.html#why-is-finding-correlation-and-relationship-analysis-on-features-important",
+    "href": "general_eda.html#why-is-finding-correlation-and-relationship-analysis-on-features-important",
+    "title": "Exploratory Data Analysis",
+    "section": "Why is finding correlation and relationship analysis on features important?",
+    "text": "Why is finding correlation and relationship analysis on features important?\nfix comment for utteranc\n\n{{&lt; utterances-comments  &gt;}}"
+  },
+  {
+    "objectID": "general_eda.html#why-is-finding-correlation-and-relationship-analysis-on-features-important-1",
+    "href": "general_eda.html#why-is-finding-correlation-and-relationship-analysis-on-features-important-1",
+    "title": "Exploratory Data Analysis",
+    "section": "Why is finding correlation and relationship analysis on features important?",
+    "text": "Why is finding correlation and relationship analysis on features important?\n\n\n*Music Production insights**: Knowing what is related to danceability let’s said makes music producer able to understand what makes a good music\nMarketing & Promotion Strategies : Knowsing what is the relationship between top performing songs and its features is important as it helps the platform to recommend same type fo songs for users in the future."
+  },
+  {
+    "objectID": "general_eda.html#from-relationships-to-decisions-enter-ai",
+    "href": "general_eda.html#from-relationships-to-decisions-enter-ai",
+    "title": "Exploratory Data Analysis",
+    "section": "From Relationships to Decisions: Enter AI",
+    "text": "From Relationships to Decisions: Enter AI\n\n\nUnderstanding Relationships: Now that you know how to explore relationships in data, the next step is using AI to make decisions based on these insights.\nWhy AI is Needed:\n\nScale: AI can analyze vast amounts of data quickly, something humans can’t do daily.\nEfficiency: AI can identify patterns and trends in data automatically, enabling faster and more accurate decisions."
+  },
+  {
+    "objectID": "general_eda.html#example-ai-in-action",
+    "href": "general_eda.html#example-ai-in-action",
+    "title": "Exploratory Data Analysis",
+    "section": "Example: AI in Action",
+    "text": "Example: AI in Action\n\n\nAI groups similar data points (like songs or users) without needing pre-labeled examples.\nExample 1: Grouping songs by genre, mood, or tempo to create better recommendations without manual analysis.\nExample 2: Spotify Wrap:\n\nHow It Works: AI analyzes your listening habits, clusters you with similar users, and creates personalized playlists.\nBenefits: Tailored music recommendations, targeted ads, and a deeper understanding of user preferences."
+  },
+  {
+    "objectID": "general_eda.html#and-more",
+    "href": "general_eda.html#and-more",
+    "title": "Exploratory Data Analysis",
+    "section": "And More…",
+    "text": "And More…\n\nTouch optimized (presentations look great on mobile, swipe to navigate slides)\nFooter & Logo (optionally specify custom footer per-slide)\nAuto-Slide (step through slides automatically, without any user input)\nMultiplex (allows your audience to follow the slides of the presentation you are controlling on their own phone, tablet or laptop).\n\n\nLearn more: Quarto Presentations"
   }
 ]

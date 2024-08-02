@@ -2,11 +2,15 @@ project:
   type: website
   output-dir: docs
   render:
-    - index.qmd
     - general_eda.qmd
 
 execute:
   freeze: auto
+  
+html:
+  comments:
+    utterances:
+       repo: zadchin/alpha_test
 
 format:
   revealjs:
@@ -14,5 +18,6 @@ format:
     preview-links: auto
     logo: images/quarto.png
     css: styles.css
+    format:
     includes:
       in-header: _utterances.html
