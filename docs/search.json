@@ -42,15 +42,22 @@
     "text": "Column Explanation (cont.)\n\ndanceability_%: Percentage indicating how suitable the song is for dancing\n\n\nvalence_%: Positivity of the song’s musical content\n\n\nenergy_%: Perceived energy level of the song\n\n\nacousticness_%: Amount of acoustic sound in the song\n\n\ninstrumentalness_%: Amount of instrumental content in the song\n\n\nliveness_%: Presence of live performance elements\n\n\nspeechiness_%: Amount of spoken words in the song"
   },
   {
-    "objectID": "general_eda.html#given-this-dataset-what-are-some-questions-that-spotify-might-ask-to-understand-its-users-improve-its-platform",
-    "href": "general_eda.html#given-this-dataset-what-are-some-questions-that-spotify-might-ask-to-understand-its-users-improve-its-platform",
-    "title": "RT Session 1",
-    "section": "Given this dataset, what are some questions that Spotify might ask to understand its users / improve its platform?",
-    "text": "Given this dataset, what are some questions that Spotify might ask to understand its users / improve its platform?"
-  },
-  {
     "objectID": "general_eda.html#questions-that-spotify-might-be-interested-in",
     "href": "general_eda.html#questions-that-spotify-might-be-interested-in",
+    "title": "RT Session 1",
+    "section": "Questions that Spotify might be interested in",
+    "text": "Questions that Spotify might be interested in"
+  },
+  {
+    "objectID": "general_eda.html#poll",
+    "href": "general_eda.html#poll",
+    "title": "RT Session 1",
+    "section": "Poll",
+    "text": "Poll"
+  },
+  {
+    "objectID": "general_eda.html#questions-that-spotify-might-be-interested-in-1",
+    "href": "general_eda.html#questions-that-spotify-might-be-interested-in-1",
     "title": "RT Session 1",
     "section": "Questions that Spotify might be interested in",
     "text": "Questions that Spotify might be interested in\n\n\nWhat are the top 5 songs in 2023?\nWhat are the characteristics of the top 5 songs?\nWhat are the months and days that most songs are produced?\nWhat are the distributions of the audio features?\nWhat are the relationship between audio features?\nWhat are the different characteristics between the most and least-stream songs?"
@@ -165,7 +172,7 @@
     "href": "general_eda.html#what-did-you-observe-from-the-barplot-itself",
     "title": "RT Session 1",
     "section": "What did you observe from the barplot itself",
-    "text": "What did you observe from the barplot itself\nfix comment for utteranc\n\n{{&lt; utterances-comments  &gt;}}"
+    "text": "What did you observe from the barplot itself"
   },
   {
     "objectID": "general_eda.html#about-trend-analysis",
@@ -179,7 +186,7 @@
     "href": "general_eda.html#why-is-trend-analysis-important-for-spotify",
     "title": "RT Session 1",
     "section": "Why is trend analysis important for Spotify?",
-    "text": "Why is trend analysis important for Spotify?\nfix comment for utteranc\n\n{{&lt; utterances-comments  &gt;}}"
+    "text": "Why is trend analysis important for Spotify?"
   },
   {
     "objectID": "general_eda.html#understanding-trends-for-spotify",
@@ -200,7 +207,7 @@
     "href": "general_eda.html#what-did-you-observe-from-the-trend-analysis",
     "title": "RT Session 1",
     "section": "What did you observe from the trend analysis?",
-    "text": "What did you observe from the trend analysis?\nfix comment for utteranc\n\n{{&lt; utterances-comments  &gt;}}"
+    "text": "What did you observe from the trend analysis?"
   },
   {
     "objectID": "general_eda.html#scatterplot",
@@ -256,14 +263,14 @@
     "href": "general_eda.html#what-did-you-observe",
     "title": "RT Session 1",
     "section": "What did you observe?",
-    "text": "What did you observe?\nfix comment for utteranc\n\n{{&lt; utterances-comments  &gt;}}"
+    "text": "What did you observe?"
   },
   {
     "objectID": "general_eda.html#why-is-finding-correlation-and-relationship-analysis-on-features-important",
     "href": "general_eda.html#why-is-finding-correlation-and-relationship-analysis-on-features-important",
     "title": "RT Session 1",
     "section": "Why is finding correlation and relationship analysis on features important?",
-    "text": "Why is finding correlation and relationship analysis on features important?\nfix comment for utteranc\n\n{{&lt; utterances-comments  &gt;}}"
+    "text": "Why is finding correlation and relationship analysis on features important?"
   },
   {
     "objectID": "general_eda.html#why-is-finding-correlation-and-relationship-analysis-on-features-important-1",

@@ -11,15 +11,15 @@ format:
 
 # Hello
 
-## ![](img/2.png)
+# ![](img/2.png)
 
-## ![](img/3.png)
+# ![](img/3.png)
 
-## ![](img/4.png)
+# ![](img/4.png)
 
-## ![](img/5.png)
+# ![](img/5.png)
 
-## ![](img/6.png)
+# ![](img/6.png)
 
 
 # Icebreaker
@@ -142,7 +142,7 @@ speechiness_%: Amount of spoken words in the song
 :::
 
 
-## Given this dataset, what are some questions that Spotify might ask to understand its users / improve its platform? {.smaller}
+## Questions that Spotify might be interested in {.smaller}
 
 
 ```{r}
@@ -150,6 +150,13 @@ library(readr)
 library(DT)
 data_r <- read_csv("spotify2023.csv", show_col_types = FALSE)
 datatable(data_r, options = list(scrollX = TRUE, scrollY = "300px"))
+```
+
+
+## Poll
+
+```{=html}
+<iframe src="https://app.sli.do/event/s2T3QonWGYrspayVrstKAm" width="1000" height="700"></iframe>
 ```
 
 
@@ -297,6 +304,11 @@ Plot.plot({
 
 ## What did you observe in the count of years and months?
 
+```{=html}
+<iframe src="https://app.sli.do/event/s2T3QonWGYrspayVrstKAm" width="1000" height="700"></iframe>
+```
+
+
 
 # (3) Continuous Feature Analysis
 
@@ -355,6 +367,10 @@ Plot.plot({
 
 ## What happened when you increase/decrease the number of bins?
 
+```{=html}
+<iframe src="https://app.sli.do/event/rf17fANCki6p8hBWSYfAAu" width="1000" height="700"></iframe>
+```
+
 
 ## What happened when you increase/decrease the number of bins?
 
@@ -368,11 +384,10 @@ Plot.plot({
 
 ## What did you observe from the barplot itself
 
-[fix comment for utteranc]{style="color:red;"}
+```{=html}
+<iframe src="https://app.sli.do/event/rf17fANCki6p8hBWSYfAAu" width="1000" height="700"></iframe>
+```
 
-<div class="utterances-comments">
-{{< utterances-comments >}}
-</div>
 
 # (4) Trend Analysis
 
@@ -384,11 +399,9 @@ Trend analysis is the process of examining data over time to identify patterns, 
 
 ## Why is trend analysis important for Spotify?
 
-[fix comment for utteranc]{style="color:red;"}
-
-<div class="utterances-comments">
-{{< utterances-comments >}}
-</div>
+```{=html}
+<iframe src="https://app.sli.do/event/rf17fANCki6p8hBWSYfAAu" width="1000" height="700"></iframe>
+```
 
 ## Understanding Trends for Spotify
 
@@ -436,11 +449,9 @@ Plot.line(sorted_trends, {x: 'released_year', y: selected_column_trend}).plot()
 
 ## What did you observe from the trend analysis?
 
-[fix comment for utteranc]{style="color:red;"}
-
-<div class="utterances-comments">
-{{< utterances-comments >}}
-</div>
+```{=html}
+<iframe src="https://app.sli.do/event/sHxrjRZGYPzAKXF18p85X1" width="1000" height="700"></iframe>
+```
 
 
 # (5) Relationship Analysis
@@ -604,19 +615,15 @@ Plot.plot({
 
 ## What did you observe?
 
-[fix comment for utteranc]{style="color:red;"}
-
-<div class="utterances-comments">
-{{< utterances-comments >}}
-</div>
+```{=html}
+<iframe src="https://app.sli.do/event/sHxrjRZGYPzAKXF18p85X1" width="1000" height="700"></iframe>
+```
 
 ## Why is finding correlation and relationship analysis on features important?
 
-[fix comment for utteranc]{style="color:red;"}
-
-<div class="utterances-comments">
-{{< utterances-comments >}}
-</div>
+```{=html}
+<iframe src="https://app.sli.do/event/sHxrjRZGYPzAKXF18p85X1" width="1000" height="700"></iframe>
+```
 
 
 ## Why is finding correlation and relationship analysis on features important?
