@@ -221,7 +221,7 @@
     "href": "general_eda.html#linear-regression-1",
     "title": "RT Session 1",
     "section": "Linear Regression",
-    "text": "Linear Regression\n\n\nThe linear equation is typically of the form: \\(y = mx + c\\), where:\n\n\\(y\\) is the dependent variable (the outcome we are trying to predict or explain),\n\\(x\\) is the independent variable (the predictor or input variable),\n\\(m\\) is the slope of the line (indicating the change in \\(y\\) for a unit change in $ x$).\n\\(c\\) is the y-intercept (the value of $ y $ when $ x$ is 0)."
+    "text": "Linear Regression\n\n\nThe linear equation is typically of the form: \\(y = mx + c\\), where:\n\n\\(y\\) is the dependent variable (the outcome we are trying to predict or explain),\n\\(x\\) is the independent variable (the predictor or input variable),\n\\(m\\) is the slope of the line (indicating the change in \\(y\\) for a unit change in \\(x\\)).\n\\(c\\) is the y-intercept (the value of \\(y\\) when \\(x\\) is 0)."
   },
   {
     "objectID": "general_eda.html#linear-regression-2",
@@ -270,7 +270,7 @@
     "href": "general_eda.html#why-is-finding-correlation-and-relationship-analysis-on-features-important-1",
     "title": "RT Session 1",
     "section": "Why is finding correlation and relationship analysis on features important?",
-    "text": "Why is finding correlation and relationship analysis on features important?\n\n\n*Music Production insights**: Knowing what is related to danceability let’s said makes music producer able to understand what makes a good music\nMarketing & Promotion Strategies : Knowsing what is the relationship between top performing songs and its features is important as it helps the platform to recommend same type fo songs for users in the future."
+    "text": "Why is finding correlation and relationship analysis on features important?\n\n\nMusic Production insights: Knowing what is related to danceability let’s said makes music producer able to understand what makes a good music\nMarketing & Promotion Strategies : Knowsing what is the relationship between top performing songs and its features is important as it helps the platform to recommend same type fo songs for users in the future."
   },
   {
     "objectID": "general_eda.html#from-relationships-to-decisions-enter-ai",
