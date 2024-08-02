@@ -7,8 +7,6 @@ format:
     preview-links: auto
     logo: img/rt-logo.webp
     css: styles.css
-    gfm:
-      mermaid-format: svg
 ---
 
 # Hello
