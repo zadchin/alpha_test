@@ -2,295 +2,288 @@
   {
     "objectID": "general_eda.html#do-you-recognize-the-logo",
     "href": "general_eda.html#do-you-recognize-the-logo",
-    "title": "Exploratory Data Analysis",
+    "title": "RT Session 1",
     "section": "Do you recognize the logo?",
     "text": "Do you recognize the logo?"
   },
   {
     "objectID": "general_eda.html#shout-it-out",
     "href": "general_eda.html#shout-it-out",
-    "title": "Exploratory Data Analysis",
+    "title": "RT Session 1",
     "section": "Shout it Out!",
     "text": "Shout it Out!"
   },
   {
     "objectID": "general_eda.html#about-spotify",
     "href": "general_eda.html#about-spotify",
-    "title": "Exploratory Data Analysis",
+    "title": "RT Session 1",
     "section": "About Spotify",
     "text": "About Spotify\n\n\n626 million active users globally.\nOver 100 million songs in the Spotify library.\nDetailed metadata for each song, including artist, album, release date, Beats per minute, danceability, valence, energy, liveness etc\nIn our current project, we will explore the 2023 Spotify Dataset.\nThis dataset contains 953 rows and 16 columns."
   },
   {
     "objectID": "general_eda.html#dataset",
     "href": "general_eda.html#dataset",
-    "title": "Exploratory Data Analysis",
+    "title": "RT Session 1",
     "section": "Dataset",
     "text": "Dataset\n\n\n\n\n\n\n\nLet’s understand the column one-by-one."
   },
   {
     "objectID": "general_eda.html#column-explanation",
     "href": "general_eda.html#column-explanation",
-    "title": "Exploratory Data Analysis",
+    "title": "RT Session 1",
     "section": "Column Explanation",
     "text": "Column Explanation\n\ntrack_name: Name of the song\n\n\nartist(s)_name: Name of the artist(s) of the song\n\n\nartist_count: Number of artists contributing to the song\n\n\nreleased_year: Year when the song was released\n\n\nreleased_month: Month when the song was released\n\n\nreleased_day: Day of the month when the song was released\n\n\nstreams: Total number of streams on Spotify\n\n\nbpm: Beats per minute, a measure of song tempo\n\n\nmode: Mode of the song (major or minor)"
   },
   {
     "objectID": "general_eda.html#column-explanation-cont.",
     "href": "general_eda.html#column-explanation-cont.",
-    "title": "Exploratory Data Analysis",
+    "title": "RT Session 1",
     "section": "Column Explanation (cont.)",
     "text": "Column Explanation (cont.)\n\ndanceability_%: Percentage indicating how suitable the song is for dancing\n\n\nvalence_%: Positivity of the song’s musical content\n\n\nenergy_%: Perceived energy level of the song\n\n\nacousticness_%: Amount of acoustic sound in the song\n\n\ninstrumentalness_%: Amount of instrumental content in the song\n\n\nliveness_%: Presence of live performance elements\n\n\nspeechiness_%: Amount of spoken words in the song"
   },
   {
-    "objectID": "general_eda.html#comment-one",
-    "href": "general_eda.html#comment-one",
-    "title": "Exploratory Data Analysis",
-    "section": "Comment one",
-    "text": "Comment one\nfix comment for utteranc\nGiven this dataset, what are some questions that Spotify might ask to understand its users / improve its platform?\n\n\n\n\n\n\n\n{{&lt; utterances-comments  &gt;}}"
+    "objectID": "general_eda.html#given-this-dataset-what-are-some-questions-that-spotify-might-ask-to-understand-its-users-improve-its-platform",
+    "href": "general_eda.html#given-this-dataset-what-are-some-questions-that-spotify-might-ask-to-understand-its-users-improve-its-platform",
+    "title": "RT Session 1",
+    "section": "Given this dataset, what are some questions that Spotify might ask to understand its users / improve its platform?",
+    "text": "Given this dataset, what are some questions that Spotify might ask to understand its users / improve its platform?"
   },
   {
     "objectID": "general_eda.html#questions-that-spotify-might-be-interested-in",
     "href": "general_eda.html#questions-that-spotify-might-be-interested-in",
-    "title": "Exploratory Data Analysis",
+    "title": "RT Session 1",
     "section": "Questions that Spotify might be interested in",
     "text": "Questions that Spotify might be interested in\n\n\nWhat are the top 5 songs in 2023?\nWhat are the characteristics of the top 5 songs?\nWhat are the months and days that most songs are produced?\nWhat are the distributions of the audio features?\nWhat are the relationship between audio features?\nWhat are the different characteristics between the most and least-stream songs?"
   },
   {
-    "objectID": "general_eda.html#ai-data",
-    "href": "general_eda.html#ai-data",
-    "title": "Exploratory Data Analysis",
-    "section": "AI & Data",
-    "text": "AI & Data\n\n\nfix the command\n\n\n\n\n\nflowchart LR\n  Data (Round edge) --&gt; AI (Round edge)\n\n\n\n\n\n\n\n\nFurthermore, AI relies on data. Understanding the data before feeding an algorithm is important."
-  },
-  {
     "objectID": "general_eda.html#exploratory-data-analysis",
     "href": "general_eda.html#exploratory-data-analysis",
-    "title": "Exploratory Data Analysis",
+    "title": "RT Session 1",
     "section": "Exploratory Data Analysis",
     "text": "Exploratory Data Analysis\n\nExploratory Data Analysis (EDA) is the process of analyzing data sets to summarize their main characteristics, often using visual methods.\n\n\nIt’s a critical step in the data analysis workflow, providing insights into the structure, patterns, and relationships within the data."
   },
   {
     "objectID": "general_eda.html#exploratory-data-analysis-1",
     "href": "general_eda.html#exploratory-data-analysis-1",
-    "title": "Exploratory Data Analysis",
+    "title": "RT Session 1",
     "section": "Exploratory Data Analysis",
     "text": "Exploratory Data Analysis\n\n\nEDA helps you to understand the nuances in your data\nEDA helps ensure the quality and reliability of your data\nEDA is the foundation for complex analyses as it helps with features selection, hypothesis generation, and determining the research direction."
   },
   {
     "objectID": "general_eda.html#agenda",
     "href": "general_eda.html#agenda",
-    "title": "Exploratory Data Analysis",
+    "title": "RT Session 1",
     "section": "Agenda",
     "text": "Agenda\n\n\nTable Analysis\nDiscrete Data Analysis\nContinuous Data Analysis\nTrend Analysis\nRelationship Analysis"
   },
   {
     "objectID": "general_eda.html#what-are-the-top-5-songs-based-on-stream-in-2023",
     "href": "general_eda.html#what-are-the-top-5-songs-based-on-stream-in-2023",
-    "title": "Exploratory Data Analysis",
+    "title": "RT Session 1",
     "section": "What are the top 5 songs based on stream in 2023?",
     "text": "What are the top 5 songs based on stream in 2023?"
   },
   {
     "objectID": "general_eda.html#what-are-the-top-5-songs-based-on-danceability-in-2023",
     "href": "general_eda.html#what-are-the-top-5-songs-based-on-danceability-in-2023",
-    "title": "Exploratory Data Analysis",
+    "title": "RT Session 1",
     "section": "What are the top 5 songs based on danceability in 2023?",
     "text": "What are the top 5 songs based on danceability in 2023?"
   },
   {
     "objectID": "general_eda.html#what-are-the-bottom-5-songs-based-on-energy-in-2023",
     "href": "general_eda.html#what-are-the-bottom-5-songs-based-on-energy-in-2023",
-    "title": "Exploratory Data Analysis",
+    "title": "RT Session 1",
     "section": "What are the bottom 5 songs based on energy in 2023?",
     "text": "What are the bottom 5 songs based on energy in 2023?"
   },
   {
     "objectID": "general_eda.html#discrete-feature",
     "href": "general_eda.html#discrete-feature",
-    "title": "Exploratory Data Analysis",
+    "title": "RT Session 1",
     "section": "Discrete Feature",
     "text": "Discrete Feature\n\nFeatures that can only take in a specific set of values, often counted in whole number. For example,\n\n\n\nCoin flips: 0 or 1\nDays of the Week: Monday, Tuesday, Wednesday etc\nClass Grades: Students can receive specific grades like A, B, C, D, or F."
   },
   {
     "objectID": "general_eda.html#bar-plot",
     "href": "general_eda.html#bar-plot",
-    "title": "Exploratory Data Analysis",
+    "title": "RT Session 1",
     "section": "Bar Plot",
     "text": "Bar Plot\n\nA bar plot is a chart that uses bars to represent the frequency or count of different categories of a discrete variable.\n\n\nBar plots are ideal for discrete variables because they clearly show the count or frequency of each category, making it easy to compare them."
   },
   {
-    "objectID": "general_eda.html#visualize",
-    "href": "general_eda.html#visualize",
-    "title": "Exploratory Data Analysis",
-    "section": "Visualize",
-    "text": "Visualize\n\n\n\n\n\n\nSelect a categorical column to visualize:\n\ndata = FileAttachment(\"spotify2023.csv\").csv({ typed: true })\ncat_columns = ['released_month', 'released_day','mode']\nviewof selected_column_cat = Inputs.radio(cat_columns, {value: cat_columns[0]})\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ngrouped_data = d3.groups(data, d =&gt; d[selected_column_cat]).map(([key, values]) =&gt; ({key, count: values.length}));\n\nPlot.plot({\n  marks: [\n    Plot.barY(grouped_data, {x: \"key\", y: \"count\", fill: \"steelblue\"}),\n    Plot.text(grouped_data, {x: \"key\", y: \"count\", text: d =&gt; d.count, dy: -10})\n  ],\n  x: {\n    label: selected_column_cat\n  },\n  y: {\n    label: \"Count\"\n  },\n  color: {\n    legend: false\n  }\n})"
+    "objectID": "general_eda.html#bar-plot-analysis",
+    "href": "general_eda.html#bar-plot-analysis",
+    "title": "RT Session 1",
+    "section": "Bar Plot Analysis",
+    "text": "Bar Plot Analysis\n\n\n\n\n\n\nSelect a categorical column to visualize:\n\ndata = FileAttachment(\"spotify2023.csv\").csv({ typed: true })\ncat_columns = ['released_month', 'released_day','mode']\nviewof selected_column_cat = Inputs.radio(cat_columns, {value: cat_columns[0]})\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ngrouped_data = d3.groups(data, d =&gt; d[selected_column_cat]).map(([key, values]) =&gt; ({key, count: values.length}));\n\nPlot.plot({\n  marks: [\n    Plot.barY(grouped_data, {x: \"key\", y: \"count\", fill: \"steelblue\"}),\n    Plot.text(grouped_data, {x: \"key\", y: \"count\", text: d =&gt; d.count, dy: -10})\n  ],\n  x: {\n    label: selected_column_cat\n  },\n  y: {\n    label: \"Count\"\n  },\n  color: {\n    legend: false\n  }\n})"
   },
   {
-    "objectID": "general_eda.html#comment-two",
-    "href": "general_eda.html#comment-two",
-    "title": "Exploratory Data Analysis",
-    "section": "Comment two",
-    "text": "Comment two\nfix comment for utteranc\n\n{{&lt; utterances-comments  &gt;}}"
+    "objectID": "general_eda.html#what-did-you-observe-in-the-count-of-years-and-months",
+    "href": "general_eda.html#what-did-you-observe-in-the-count-of-years-and-months",
+    "title": "RT Session 1",
+    "section": "What did you observe in the count of years and months?",
+    "text": "What did you observe in the count of years and months?"
   },
   {
     "objectID": "general_eda.html#continuous-feature",
     "href": "general_eda.html#continuous-feature",
-    "title": "Exploratory Data Analysis",
+    "title": "RT Session 1",
     "section": "Continuous Feature",
     "text": "Continuous Feature\n\nFeatures that can take any value within a given range, often measured and including fractions or decimals.\n\n\n\nHeight: A person’s height can be any value within a range (e.g., 150.5 cm, 170.2 cm).\nTemperature: Temperature can vary continuously (e.g., 22.3°C, 35.6°C).\nWeight: Weight can take on any value within a range (e.g., 55.5 kg, 72.8 kg)."
   },
   {
     "objectID": "general_eda.html#histogram",
     "href": "general_eda.html#histogram",
-    "title": "Exploratory Data Analysis",
+    "title": "RT Session 1",
     "section": "Histogram",
     "text": "Histogram\n\nA histogram is a chart that uses bars to represent the distribution of a continuous variable, showing the frequency of data within certain ranges or bins.\n\n\nHistogram makes it easier to identify patterns, such as skewness, central tendency, and the presence of outliers."
   },
   {
-    "objectID": "general_eda.html#visualize-1",
-    "href": "general_eda.html#visualize-1",
-    "title": "Exploratory Data Analysis",
-    "section": "Visualize",
-    "text": "Visualize\n\n\n\n\n\n\nSelect a continuous column to visualize:\n\ncont_columns = ['streams', 'bpm', 'danceability_%', 'valence_%', 'energy_%', 'acousticness_%',\n       'instrumentalness_%', 'liveness_%', 'speechiness_%']\nviewof selected_column = Inputs.radio(cont_columns, {value: 'danceability_%'})\nviewof bin_count = Inputs.range([1, 50], {step: 1, value: 15, label: \"Number of Bins\"})\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPlot.plot({\n  marks: [\n    Plot.rectY(data, Plot.binX({y: \"count\"}, {x: selected_column, fill: \"steelblue\", thresholds: bin_count}))\n  ],\n  x: {\n    label: selected_column\n  },\n  y: {\n    label: \"Count\"\n  },\n  color: {\n    legend: false\n  }\n})"
+    "objectID": "general_eda.html#histogram-analysis",
+    "href": "general_eda.html#histogram-analysis",
+    "title": "RT Session 1",
+    "section": "Histogram Analysis",
+    "text": "Histogram Analysis\n\n\n\n\n\n\nSelect a continuous column to visualize:\n\ncont_columns = ['streams', 'bpm', 'danceability_%', 'valence_%', 'energy_%', 'acousticness_%',\n       'instrumentalness_%', 'liveness_%', 'speechiness_%']\nviewof selected_column = Inputs.radio(cont_columns, {value: 'danceability_%'})\nviewof bin_count = Inputs.range([1, 50], {step: 1, value: 15, label: \"Number of Bins\"})\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPlot.plot({\n  marks: [\n    Plot.rectY(data, Plot.binX({y: \"count\"}, {x: selected_column, fill: \"steelblue\", thresholds: bin_count}))\n  ],\n  x: {\n    label: selected_column\n  },\n  y: {\n    label: \"Count\"\n  },\n  color: {\n    legend: false\n  }\n})"
   },
   {
     "objectID": "general_eda.html#what-happened-when-you-increasedecrease-the-number-of-bins",
     "href": "general_eda.html#what-happened-when-you-increasedecrease-the-number-of-bins",
-    "title": "Exploratory Data Analysis",
+    "title": "RT Session 1",
     "section": "What happened when you increase/decrease the number of bins?",
-    "text": "What happened when you increase/decrease the number of bins?\nfix comment for utteranc\n\n{{&lt; utterances-comments  &gt;}}"
+    "text": "What happened when you increase/decrease the number of bins?"
+  },
+  {
+    "objectID": "general_eda.html#what-happened-when-you-increasedecrease-the-number-of-bins-1",
+    "href": "general_eda.html#what-happened-when-you-increasedecrease-the-number-of-bins-1",
+    "title": "RT Session 1",
+    "section": "What happened when you increase/decrease the number of bins?",
+    "text": "What happened when you increase/decrease the number of bins?\n\n\nIncreasing bins: Provides a more detailed and granular view of the data, revealing smaller variations in the distribution.\n\n\n\n\nDecreasing bins: Offers a broader, smoother overview of the data, potentially hiding finer details but simplifying the overall pattern."
   },
   {
     "objectID": "general_eda.html#what-did-you-observe-from-the-barplot-itself",
     "href": "general_eda.html#what-did-you-observe-from-the-barplot-itself",
-    "title": "Exploratory Data Analysis",
+    "title": "RT Session 1",
     "section": "What did you observe from the barplot itself",
     "text": "What did you observe from the barplot itself\nfix comment for utteranc\n\n{{&lt; utterances-comments  &gt;}}"
   },
   {
     "objectID": "general_eda.html#about-trend-analysis",
     "href": "general_eda.html#about-trend-analysis",
-    "title": "Exploratory Data Analysis",
+    "title": "RT Session 1",
     "section": "About Trend Analysis",
     "text": "About Trend Analysis\n\nTrend analysis is the process of examining data over time to identify patterns, trends, and insights."
   },
   {
     "objectID": "general_eda.html#why-is-trend-analysis-important-for-spotify",
     "href": "general_eda.html#why-is-trend-analysis-important-for-spotify",
-    "title": "Exploratory Data Analysis",
+    "title": "RT Session 1",
     "section": "Why is trend analysis important for Spotify?",
     "text": "Why is trend analysis important for Spotify?\nfix comment for utteranc\n\n{{&lt; utterances-comments  &gt;}}"
   },
   {
     "objectID": "general_eda.html#understanding-trends-for-spotify",
     "href": "general_eda.html#understanding-trends-for-spotify",
-    "title": "Exploratory Data Analysis",
+    "title": "RT Session 1",
     "section": "Understanding Trends for Spotify",
     "text": "Understanding Trends for Spotify\n\n\nUnderstanding Audience Preferences: Analyzing music feature trends over time helps identify shifts in listener preferences, enabling better music recommendations and targeted marketing strategies.\nPredicting Hits: By recognizing trends in features like danceability or energy, Spotify can anticipate which songs might become popular, aiding in playlist curation and promotional efforts.\nAdapting to Industry Changes: Monitoring trends allows Spotify to stay aligned with evolving music genres and production styles, ensuring its catalog remains relevant and appealing to users."
   },
   {
-    "objectID": "general_eda.html#visualize-2",
-    "href": "general_eda.html#visualize-2",
-    "title": "Exploratory Data Analysis",
+    "objectID": "general_eda.html#visualize",
+    "href": "general_eda.html#visualize",
+    "title": "RT Session 1",
     "section": "Visualize",
     "text": "Visualize\n\n\n\n\n\n\nSelect a continuous column to visualize:\n\naudio_features = ['danceability_%', 'valence_%', 'energy_%', 'acousticness_%',\n                  'instrumentalness_%', 'liveness_%', 'speechiness_%']\nviewof selected_column_trend = Inputs.radio(audio_features, {value: 'danceability_%'})\n\n// Group the data by 'released_year' and calculate the mean of the audio features\ntrends = Array.from(\n  d3.group(data, d =&gt; d.released_year),\n  ([released_year, group]) =&gt; ({\n    released_year,\n    ...Object.fromEntries(audio_features.map(feature =&gt; [\n      feature,\n      d3.mean(group, d =&gt; d[feature])\n    ]))\n  })\n)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nsorted_trends = trends.sort((a, b) =&gt; a.released_year - b.released_year)\n\n// Create the line plot with the sorted data\nPlot.line(sorted_trends, {x: 'released_year', y: selected_column_trend}).plot()"
   },
   {
     "objectID": "general_eda.html#what-did-you-observe-from-the-trend-analysis",
     "href": "general_eda.html#what-did-you-observe-from-the-trend-analysis",
-    "title": "Exploratory Data Analysis",
+    "title": "RT Session 1",
     "section": "What did you observe from the trend analysis?",
     "text": "What did you observe from the trend analysis?\nfix comment for utteranc\n\n{{&lt; utterances-comments  &gt;}}"
   },
   {
     "objectID": "general_eda.html#scatterplot",
     "href": "general_eda.html#scatterplot",
-    "title": "Exploratory Data Analysis",
+    "title": "RT Session 1",
     "section": "Scatterplot",
     "text": "Scatterplot\n\n\nA scatterplot is a type of data visualization that displays individual data points on a two-dimensional graph.\nEach point on the scatterplot represents an observation from a dataset, with its position determined by two variables—one plotted on the x-axis and the other on the y-axis.\nScatterplots are commonly used to explore the relationship between two continuous variables to reveal patterns, trends, correlations, or clusters within the data."
   },
   {
     "objectID": "general_eda.html#linear-regression",
     "href": "general_eda.html#linear-regression",
-    "title": "Exploratory Data Analysis",
+    "title": "RT Session 1",
     "section": "Linear Regression",
     "text": "Linear Regression\n\n\nLinear regression is a statistical method used to model and analyze the relationship between two variables by fitting a linear equation to the observed data."
   },
   {
     "objectID": "general_eda.html#linear-regression-1",
     "href": "general_eda.html#linear-regression-1",
-    "title": "Exploratory Data Analysis",
+    "title": "RT Session 1",
     "section": "Linear Regression",
-    "text": "Linear Regression\n\n\nThe linear equation is typically of the form: \\(y = mx + c\\), where:\n\n\n\n\n\\(y\\) is the dependent variable (the outcome we are trying to predict or explain),\n\n\n\n\n\\(x\\) is the independent variable (the predictor or input variable),\n\n\n\n\n\\(m\\) is the slope of the line (indicating the change in \\(y\\) for a unit change in $ x$).\n\n\n\n\n\\(c\\) is the y-intercept (the value of $ y $ when $ x$ is 0)."
+    "text": "Linear Regression\n\n\nThe linear equation is typically of the form: \\(y = mx + c\\), where:\n\n\\(y\\) is the dependent variable (the outcome we are trying to predict or explain),\n\\(x\\) is the independent variable (the predictor or input variable),\n\\(m\\) is the slope of the line (indicating the change in \\(y\\) for a unit change in $ x$).\n\\(c\\) is the y-intercept (the value of $ y $ when $ x$ is 0)."
   },
   {
     "objectID": "general_eda.html#linear-regression-2",
     "href": "general_eda.html#linear-regression-2",
-    "title": "Exploratory Data Analysis",
+    "title": "RT Session 1",
     "section": "Linear Regression",
     "text": "Linear Regression\n\nLinear regression helps quantify the strength and direction (positive or negative) of the relationship between the variables."
   },
   {
     "objectID": "general_eda.html#visualization",
     "href": "general_eda.html#visualization",
-    "title": "Exploratory Data Analysis",
+    "title": "RT Session 1",
     "section": "Visualization",
     "text": "Visualization\n\n\n\n\n\n\n\n\nSelect a \\(x\\) column to visualize:\n\nbivariate_cont_columns = ['danceability_%', 'valence_%', 'energy_%', 'acousticness_%',\n                  'instrumentalness_%', 'liveness_%', 'speechiness_%', 'streams']\n\n// Create the radio inputs for selecting X and Y axis columns\nviewof x_column = Inputs.radio(bivariate_cont_columns, {value: 'danceability_%'})\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSelect a \\(y\\) column to visualize:\n\nviewof y_column = Inputs.radio(bivariate_cont_columns, {value: 'streams'})\n\n\n\n\n\n\n\n\n\n\n\n// Create the scatterplot with a linear regression line\nPlot.plot({\n  marks: [\n    Plot.dot(data, {x: x_column, y: y_column, fill: \"#1E2F97\", fillOpacity: 0.5}),\n    Plot.linearRegressionY(data, {x: x_column, y: y_column, stroke: \"red\"})\n  ]\n})"
   },
   {
     "objectID": "general_eda.html#correlation",
     "href": "general_eda.html#correlation",
-    "title": "Exploratory Data Analysis",
+    "title": "RT Session 1",
     "section": "Correlation",
     "text": "Correlation\n\n\nCorrelation measures how two things are related to each other, like how one changes when the other does.\nPositive correlation means as one thing increases, the other also increases (e.g., more study time, better grades).\nNegative correlation means as one thing increases, the other decreases (e.g., more exercise, lower stress)."
   },
   {
     "objectID": "general_eda.html#correlation-heatmap",
     "href": "general_eda.html#correlation-heatmap",
-    "title": "Exploratory Data Analysis",
+    "title": "RT Session 1",
     "section": "Correlation Heatmap",
     "text": "Correlation Heatmap\n\n\n\n\n\n\nSelect Continuous Variables for Correlation Heatmap:\n\nviewof selected_bivariate_cont_columns = Inputs.checkbox(bivariate_cont_columns, {value: bivariate_cont_columns})\n\n\n\n\n\n\n\n\n\n\nfunction calculateCorrelationMatrix(data, selectedColumns) {\n  const n = selectedColumns.length;\n  const correlationMatrix = Array.from({ length: n }, () =&gt; Array(n).fill(0));\n\n  function pearsonCorrelation(x, y) {\n    const meanX = d3.mean(x);\n    const meanY = d3.mean(y);\n    const diffX = x.map(d =&gt; d - meanX);\n    const diffY = y.map(d =&gt; d - meanY);\n    const numerator = d3.sum(diffX.map((d, i) =&gt; d * diffY[i]));\n    const denominator = Math.sqrt(d3.sum(diffX.map(d =&gt; d * d)) * d3.sum(diffY.map(d =&gt; d * d)));\n    return numerator / denominator;\n  }\n\n  for (let i = 0; i &lt; n; i++) {\n    for (let j = 0; j &lt; n; j++) {\n      const col1 = selectedColumns[i];\n      const col2 = selectedColumns[j];\n      const values1 = data.map(d =&gt; d[col1]);\n      const values2 = data.map(d =&gt; d[col2]);\n      const correlation = pearsonCorrelation(values1, values2);\n      correlationMatrix[i][j] = correlation;\n    }\n  }\n\n  return correlationMatrix;\n}\n\ncorrelation_matrix = calculateCorrelationMatrix(data, selected_bivariate_cont_columns);\ncorrelation_data = selected_bivariate_cont_columns.flatMap((col1, i) =&gt;\n  selected_bivariate_cont_columns.map((col2, j) =&gt; ({\n    x: col1,\n    y: col2,\n    value: correlation_matrix[i][j]\n  }))\n);\n\nPlot.plot({\n  marks: [\n    Plot.cell(correlation_data, {x: \"x\", y: \"y\", fill: \"value\", title: d =&gt; d.value.toFixed(2)}),\n    Plot.text(correlation_data, {x: \"x\", y: \"y\", text: d =&gt; d.value.toFixed(2), dy: 0, textAnchor: \"middle\"})\n  ],\n  x: {\n    domain: selected_bivariate_cont_columns,\n    label: \"Variables\"\n  },\n  y: {\n    domain: selected_bivariate_cont_columns,\n    label: \"Variables\"\n  },\n  color: {\n    type: \"linear\",\n    scheme: \"blues\",\n    label: \"Correlation\"\n  },\n  width: 600,\n  height: 600\n})"
   },
   {
     "objectID": "general_eda.html#what-did-you-observe",
     "href": "general_eda.html#what-did-you-observe",
-    "title": "Exploratory Data Analysis",
+    "title": "RT Session 1",
     "section": "What did you observe?",
     "text": "What did you observe?\nfix comment for utteranc\n\n{{&lt; utterances-comments  &gt;}}"
   },
   {
     "objectID": "general_eda.html#why-is-finding-correlation-and-relationship-analysis-on-features-important",
     "href": "general_eda.html#why-is-finding-correlation-and-relationship-analysis-on-features-important",
-    "title": "Exploratory Data Analysis",
+    "title": "RT Session 1",
     "section": "Why is finding correlation and relationship analysis on features important?",
     "text": "Why is finding correlation and relationship analysis on features important?\nfix comment for utteranc\n\n{{&lt; utterances-comments  &gt;}}"
   },
   {
     "objectID": "general_eda.html#why-is-finding-correlation-and-relationship-analysis-on-features-important-1",
     "href": "general_eda.html#why-is-finding-correlation-and-relationship-analysis-on-features-important-1",
-    "title": "Exploratory Data Analysis",
+    "title": "RT Session 1",
     "section": "Why is finding correlation and relationship analysis on features important?",
     "text": "Why is finding correlation and relationship analysis on features important?\n\n\n*Music Production insights**: Knowing what is related to danceability let’s said makes music producer able to understand what makes a good music\nMarketing & Promotion Strategies : Knowsing what is the relationship between top performing songs and its features is important as it helps the platform to recommend same type fo songs for users in the future."
   },
   {
     "objectID": "general_eda.html#from-relationships-to-decisions-enter-ai",
     "href": "general_eda.html#from-relationships-to-decisions-enter-ai",
-    "title": "Exploratory Data Analysis",
+    "title": "RT Session 1",
     "section": "From Relationships to Decisions: Enter AI",
     "text": "From Relationships to Decisions: Enter AI\n\n\nUnderstanding Relationships: Now that you know how to explore relationships in data, the next step is using AI to make decisions based on these insights.\nWhy AI is Needed:\n\nScale: AI can analyze vast amounts of data quickly, something humans can’t do daily.\nEfficiency: AI can identify patterns and trends in data automatically, enabling faster and more accurate decisions."
   },
   {
     "objectID": "general_eda.html#example-ai-in-action",
     "href": "general_eda.html#example-ai-in-action",
-    "title": "Exploratory Data Analysis",
+    "title": "RT Session 1",
     "section": "Example: AI in Action",
     "text": "Example: AI in Action\n\n\nAI groups similar data points (like songs or users) without needing pre-labeled examples.\nExample 1: Grouping songs by genre, mood, or tempo to create better recommendations without manual analysis.\nExample 2: Spotify Wrap:\n\nHow It Works: AI analyzes your listening habits, clusters you with similar users, and creates personalized playlists.\nBenefits: Tailored music recommendations, targeted ads, and a deeper understanding of user preferences."
-  },
-  {
-    "objectID": "general_eda.html#and-more",
-    "href": "general_eda.html#and-more",
-    "title": "Exploratory Data Analysis",
-    "section": "And More…",
-    "text": "And More…\n\nTouch optimized (presentations look great on mobile, swipe to navigate slides)\nFooter & Logo (optionally specify custom footer per-slide)\nAuto-Slide (step through slides automatically, without any user input)\nMultiplex (allows your audience to follow the slides of the presentation you are controlling on their own phone, tablet or laptop).\n\n\nLearn more: Quarto Presentations"
   }
 ]

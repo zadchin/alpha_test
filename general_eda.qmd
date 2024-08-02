@@ -38,14 +38,14 @@ format:
 
 
 
-## Dataset
+## Dataset {.smaller}
 
 
 ```{r}
 library(readr)
 library(DT)
 data_r <- read_csv("spotify2023.csv", show_col_types = FALSE)
-datatable(data_r, options = list(scrollX = TRUE, scrollY = "200px"))
+datatable(data_r, options = list(scrollX = TRUE, scrollY = "300px"))
 ```
 
 ::: {.fragment .fade-in}
@@ -133,22 +133,15 @@ speechiness_%: Amount of spoken words in the song
 :::
 
 
-## Comment one
+## Given this dataset, what are some questions that Spotify might ask to understand its users / improve its platform? {.smaller}
 
-[fix comment for utteranc]{style="color:red;"}
-
-Given this dataset, what are some questions that Spotify might ask to understand its users / improve its platform?
 
 ```{r}
 library(readr)
 library(DT)
-data_r <- read_csv("spotify2023.csv",show_col_types = FALSE)
-datatable(data_r, options = list(scrollX = TRUE, scrollY = "100px"))
+data_r <- read_csv("spotify2023.csv", show_col_types = FALSE)
+datatable(data_r, options = list(scrollX = TRUE, scrollY = "300px"))
 ```
-
-<div class="utterances-comments">
-{{< utterances-comments >}}
-</div>
 
 
 ## Questions that Spotify might be interested in
@@ -169,32 +162,6 @@ datatable(data_r, options = list(scrollX = TRUE, scrollY = "100px"))
 ::: {.fragment .fade-in}
 
 Therefore, we visualize the data to extract useful insights.
-:::
-
-
-
-## AI & Data 
-
-::: columns
-::: {.column width="40%"}
-
-[fix the command]{style="color:red;"}
-
-```{mermaid}
-%%| fig-width: 3
-flowchart LR
-  Data (Round edge) --> AI (Round edge)
-```
-
-:::
-
-::: {.column width="60%"}
-::: {.fragment .fade-in}
-
-Furthermore, AI relies on data. Understanding the data before feeding an algorithm is important.
-:::
-:::
-
 :::
 
 
@@ -233,32 +200,32 @@ It’s a critical step in the data analysis workflow, providing insights into th
 # (1) Table Analysis
 
 
-## What are the top 5 songs based on stream in 2023?
+## What are the top 5 songs based on stream in 2023?{.smaller}
 
 ```{r}
 library(readr)
 library(DT)
-data_r <- read_csv("spotify2023.csv",show_col_types = FALSE)
-datatable(data_r, options = list(scrollX = TRUE, scrollY = "200px"))
+data_r <- read_csv("spotify2023.csv", show_col_types = FALSE)
+datatable(data_r, options = list(scrollX = TRUE, scrollY = "300px"))
 ```
 
 
-## What are the top 5 songs based on danceability in 2023?
+## What are the top 5 songs based on danceability in 2023?{.smaller}
 
 ```{r}
 library(readr)
 library(DT)
-data_r <- read_csv("spotify2023.csv",show_col_types = FALSE)
-datatable(data_r, options = list(scrollX = TRUE, scrollY = "200px"))
+data_r <- read_csv("spotify2023.csv", show_col_types = FALSE)
+datatable(data_r, options = list(scrollX = TRUE, scrollY = "300px"))
 ```
 
-## What are the bottom 5 songs based on energy in 2023?
+## What are the bottom 5 songs based on energy in 2023? {.smaller}
 
 ```{r}
 library(readr)
 library(DT)
-data_r <- read_csv("spotify2023.csv",show_col_types = FALSE)
-datatable(data_r, options = list(scrollX = TRUE, scrollY = "200px"))
+data_r <- read_csv("spotify2023.csv", show_col_types = FALSE)
+datatable(data_r, options = list(scrollX = TRUE, scrollY = "300px"))
 ```
 
 
@@ -287,7 +254,7 @@ A bar plot is a chart that uses bars to represent the frequency or count of diff
 Bar plots are ideal for discrete variables because they clearly show the count or frequency of each category, making it easy to compare them.
 :::
 
-## Visualize
+## Bar Plot Analysis
 
 ::: {.callout-tip appearance="simple"}
 Select a categorical column to visualize:
@@ -319,13 +286,7 @@ Plot.plot({
 })
 ```
 
-## Comment two
-
-[fix comment for utteranc]{style="color:red;"}
-
-<div class="utterances-comments">
-{{< utterances-comments >}}
-</div>
+## What did you observe in the count of years and months?
 
 
 # (3) Continuous Feature Analysis
@@ -352,7 +313,7 @@ A histogram is a chart that uses bars to represent the distribution of a continu
 Histogram makes it easier to identify patterns, such as skewness, central tendency, and the presence of outliers.
 :::
 
-## Visualize
+## Histogram Analysis {.smaller}
 
 ::: {.callout-tip appearance="simple"}
 Select a continuous column to visualize:
@@ -385,11 +346,16 @@ Plot.plot({
 
 ## What happened when you increase/decrease the number of bins?
 
-[fix comment for utteranc]{style="color:red;"}
 
-<div class="utterances-comments">
-{{< utterances-comments >}}
-</div>
+## What happened when you increase/decrease the number of bins?
+
+::: {.fragment .fade-in-then-semi-out}
+- **Increasing bins**: Provides a more detailed and granular view of the data, revealing smaller variations in the distribution.
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+- **Decreasing bins**: Offers a broader, smoother overview of the data, potentially hiding finer details but simplifying the overall pattern.
+:::
 
 ## What did you observe from the barplot itself
 
@@ -487,25 +453,13 @@ Plot.line(sorted_trends, {x: 'released_year', y: selected_column_trend}).plot()
 
 ## Linear Regression
 
-::: {.fragment .fade-in-then-semi-out}
+::: incremental
 - The linear equation is typically of the form: $y = mx + c$, where:
-:::
 
-
-::: {.fragment .fade-in-then-semi-out}
-- $y$  is the dependent variable (the outcome we are trying to predict or explain),
-:::
-
-::: {.fragment .fade-in-then-semi-out}
-- $x$  is the independent variable (the predictor or input variable),
-:::
-
-::: {.fragment .fade-in-then-semi-out}
-- $m$   is the slope of the line (indicating the change in $y$ for a unit change in $ x$).
-:::
-
-::: {.fragment .fade-in-then-semi-out}
-- $c$  is the y-intercept (the value of $ y $ when $ x$ is 0).
+  - $y$  is the dependent variable (the outcome we are trying to predict or explain),
+  - $x$  is the independent variable (the predictor or input variable),
+  - $m$   is the slope of the line (indicating the change in $y$ for a unit change in $x$).
+  - $c$  is the y-intercept (the value of $y$ when $x$ is 0).
 :::
 
 
@@ -659,7 +613,7 @@ Plot.plot({
 ## Why is finding correlation and relationship analysis on features important?
 
 ::: incremental
-- *Music Production insights**: Knowing what is related to danceability let’s said makes music producer able to understand what makes a good music
+- **Music Production insights**: Knowing what is related to danceability let’s said makes music producer able to understand what makes a good music
 - **Marketing & Promotion Strategies** : Knowsing what is the relationship between top performing songs and its features is important as it helps the platform to recommend same type fo songs for users in the future.
 :::
 
